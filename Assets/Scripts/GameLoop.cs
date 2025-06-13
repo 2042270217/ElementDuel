@@ -10,7 +10,7 @@ public class GameLoop : MonoBehaviour
 	private void Awake()
 	{
 		GameObject.DontDestroyOnLoad(this.gameObject);
-
+		EDebug.LogLevelFilter(LogLevel.GameSystem, true);
 	}
 	// Start is called before the first frame update
 	void Start()
@@ -22,5 +22,7 @@ public class GameLoop : MonoBehaviour
 	void Update()
 	{
 		m_EDGame.Update();
+		EDebug.Log("GameSystemDebug", LogLevel.GameSystem);
+		EDebug.Log("GlobalDebug");
 	}
 }

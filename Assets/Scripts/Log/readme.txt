@@ -1,0 +1,10 @@
+﻿使用EDebug.Log进行打印输出
+默认情况下使用EDebug.Log(message)进行输出效果与Debug.Log(message)效果一致
+也可以为EDebug.Log指定第二个参数level
+这表示该条输出只会在levelMask包含level的情况下才会输出
+你也可以调用EDebug.LogLevelFilter()来只显示指定level的输出
+如果想新增一个LogLevel,去LogLevel.cs文件的LogLevel枚举中新增一项
+int型的每一位都表示一个LogLevel,即每个枚举项的值都为2的整数次幂且不重复
+
+最佳实践: 如果想指定Debug的输出level, 
+在GameLoop的Awake方法中调用EDebug.LogLevelFilter()

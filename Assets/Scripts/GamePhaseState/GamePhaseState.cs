@@ -25,17 +25,17 @@ namespace ElementDuel.GamePhase
 
 		public virtual void GamePhaseStart()
 		{
-			Debug.Log(m_gamePhase + ": Start");
+			EDebug.Log(m_gamePhase + ": Start", LogLevel.GamePhaseState);
 		}
 
 		public virtual void GamePhaseUpdate()
 		{
-			Debug.Log(m_gamePhase + ": Update");
+			EDebug.Log(m_gamePhase + ": Update", LogLevel.GamePhaseState);
 		}
 
 		public virtual void GamePhaseEnd()
 		{
-			Debug.Log(m_gamePhase + ": End");
+			EDebug.Log(m_gamePhase + ": End", LogLevel.GamePhaseState);
 		}
 	}
 }
