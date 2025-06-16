@@ -29,11 +29,23 @@ public static class EDebug
 	{
 		if (levelMask.HasFlag(level))
 		{
-			if (!globalDebugEnabled && level==LogLevel.All)
+			if (!globalDebugEnabled && level == LogLevel.All)
 			{
 				return;
 			}
 			Debug.Log(message);
+		}
+	}
+
+	public static void LogError(string message, LogLevel level = LogLevel.All)
+	{
+		if (levelMask.HasFlag(level))
+		{
+			if (!globalDebugEnabled && level == LogLevel.All)
+			{
+				return;
+			}
+			Debug.LogError(message);
 		}
 	}
 
