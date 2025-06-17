@@ -14,14 +14,14 @@ namespace CharacterSystem
 
         [Header("属性")] [SerializeField] private AbilityEffectType abilityEffectType;
         [SerializeField] private AbilityType abilityType;
-        [SerializeField] private int cost;
+        [SerializeField] private int totalCost;
+        [SerializeField] private int specificElementCost;
         [SerializeField] private int attackDamage;
         [SerializeField] private CharacterBuff defenseBuff;
         [SerializeField] private int healAmount;
         [SerializeField] private int energyRestoreAmount;
 
-        [FormerlySerializedAs("summonUnits")] [SerializeField]
-        private Summon summonUnit;
+        [SerializeField] private Summon summonUnit;
 
         public string AbilityName => abilityName;
 
@@ -33,7 +33,7 @@ namespace CharacterSystem
 
         public AbilityType AbilityType => abilityType;
 
-        public int Cost => cost;
+        public int TotalCost => totalCost;
 
         public int AttackDamage => attackDamage;
 
@@ -57,7 +57,7 @@ namespace CharacterSystem
         {
             BeforeApplyEffect(target);
 
-            if (AbilityTypeCompare.IsAttack(abilityEffectType))
+            if (abilityEffectType.HasFlag(AbilityEffectType.Attack))
             {
                 if (target.Count != 1)
                 {
@@ -67,16 +67,16 @@ namespace CharacterSystem
                 target[0].TakeDamage(attackDamage);
             }
 
-            if (AbilityTypeCompare.IsDefense(abilityEffectType))
+            if (abilityEffectType.HasFlag(AbilityEffectType.Defense))
             {
                 // target.AddDefense(defenseValue);
             }
 
-            if (AbilityTypeCompare.IsBuff(abilityEffectType))
+            if (abilityEffectType.HasFlag(AbilityEffectType.Buff))
             {
             }
 
-            if (AbilityTypeCompare.IsHeal(abilityEffectType))
+            if (abilityEffectType.HasFlag(AbilityEffectType.Heal))
             {
                 if (target.Count != 1)
                 {
@@ -86,7 +86,7 @@ namespace CharacterSystem
                 target[0].Heal(healAmount);
             }
 
-            if (AbilityTypeCompare.IsEnergy(abilityEffectType))
+            if (abilityEffectType.HasFlag(AbilityEffectType.Energy))
             {
                 if (target.Count != 1)
                 {
@@ -96,7 +96,7 @@ namespace CharacterSystem
                 target[0].RestoreEnergy(energyRestoreAmount);
             }
 
-            if (AbilityTypeCompare.IsSummon(abilityEffectType))
+            if (abilityEffectType.HasFlag(AbilityEffectType.Summon))
             {
                 if (summonsOnFiled != null)
                 {
@@ -127,49 +127,12 @@ namespace CharacterSystem
         None = 0,
         Attack = 1 << 0,
         Defense = 1 << 1,
-        Buff = 1 << 2, // Renamed from Heal to Buff for clarity
+        Buff = 1 << 2,
         Heal = 1 << 3,
         Energy = 1 << 4,
         Summon = 1 << 5,
     }
 
-    public static class AbilityTypeCompare
-    {
-        public static bool IsNone(AbilityEffectType abilityEffectType)
-        {
-            return abilityEffectType == AbilityEffectType.None;
-        }
-
-        public static bool IsAttack(AbilityEffectType abilityEffectType)
-        {
-            return (abilityEffectType & AbilityEffectType.Attack) != AbilityEffectType.None;
-        }
-
-        public static bool IsDefense(AbilityEffectType abilityEffectType)
-        {
-            return (abilityEffectType & AbilityEffectType.Defense) != AbilityEffectType.None;
-        }
-
-        public static bool IsBuff(AbilityEffectType abilityEffectType)
-        {
-            return (abilityEffectType & AbilityEffectType.Buff) != AbilityEffectType.None;
-        }
-
-        public static bool IsHeal(AbilityEffectType abilityEffectType)
-        {
-            return (abilityEffectType & AbilityEffectType.Heal) != AbilityEffectType.None;
-        }
-
-        public static bool IsEnergy(AbilityEffectType abilityEffectType)
-        {
-            return (abilityEffectType & AbilityEffectType.Energy) != AbilityEffectType.None;
-        }
-
-        public static bool IsSummon(AbilityEffectType abilityEffectType)
-        {
-            return (abilityEffectType & AbilityEffectType.Summon) != AbilityEffectType.None;
-        }
-    }
 
     public enum AbilityType
     {

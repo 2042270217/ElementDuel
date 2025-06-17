@@ -62,6 +62,7 @@ namespace CharacterSystem
             _currentHp = Mathf.Max(_currentHp - damage, 0);
         }
 
+
         public void Heal(int amount)
         {
             if (amount < 0)
@@ -71,6 +72,7 @@ namespace CharacterSystem
 
             _currentHp = Mathf.Min(_currentHp + amount, maxHp);
         }
+
 
         public void RestoreEnergy(int amount)
         {
@@ -82,6 +84,7 @@ namespace CharacterSystem
             _currentEnergy = Mathf.Min(_currentEnergy + amount, maxEnergy);
         }
 
+
         public void UseEnergy(int amount)
         {
             if (amount < 0)
@@ -91,6 +94,7 @@ namespace CharacterSystem
 
             _currentEnergy = Mathf.Max(_currentEnergy - amount, 0);
         }
+
 
         public void AddBuff(CharacterBuff buff)
         {
