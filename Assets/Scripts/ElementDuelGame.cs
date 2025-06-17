@@ -14,6 +14,9 @@ namespace ElementDuel
 
 
 
+
+
+
 		public void Initialize()
 		{
 			m_phaseSystem = new GamePhaseControllerSystem(this);
