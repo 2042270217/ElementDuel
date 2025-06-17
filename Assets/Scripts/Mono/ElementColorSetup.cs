@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 [ExecuteInEditMode]
 public class ElementColorSetup : MonoBehaviour
@@ -8,11 +9,11 @@ public class ElementColorSetup : MonoBehaviour
 	public ElementColorData colorData;
 	public ElementType elementType;
 
-	SpriteRenderer spriteRenderer;
+	Image image;
 	// Start is called before the first frame update
 	void Start()
 	{
-		spriteRenderer = GetComponent<SpriteRenderer>();
+		image = GetComponent<Image>();
 	}
 
 	// Update is called once per frame
@@ -21,32 +22,32 @@ public class ElementColorSetup : MonoBehaviour
 		switch (elementType)
 		{
 			case ElementType.Fire:
-				spriteRenderer.color = colorData.FireColor;
-				spriteRenderer.sprite = colorData.FireIcon;
+				image.color = colorData.FireColor;
+				image.sprite = colorData.FireIcon;
 				break;
 			case ElementType.Water:
-				spriteRenderer.color = colorData.WaterColor;
-				spriteRenderer.sprite = colorData.WaterIcon;
+				image.color = colorData.WaterColor;
+				image.sprite = colorData.WaterIcon;
 				break;
 			case ElementType.Wind:
-				spriteRenderer.color = colorData.WindColor;
-				spriteRenderer.sprite = colorData.WindIcon;
+				image.color = colorData.WindColor;
+				image.sprite = colorData.WindIcon;
 				break;
 			case ElementType.Thunder:
-				spriteRenderer.color = colorData.ThunderColor;
-				spriteRenderer.sprite = colorData.ThunderIcon;
+				image.color = colorData.ThunderColor;
+				image.sprite = colorData.ThunderIcon;
 				break;
 			case ElementType.Grass:
-				spriteRenderer.color = colorData.GrassColor;
-				spriteRenderer.sprite = colorData.GrassIcon;
+				image.color = colorData.GrassColor;
+				image.sprite = colorData.GrassIcon;
 				break;
 			case ElementType.Ice:
-				spriteRenderer.color = colorData.IceColor;
-				spriteRenderer.sprite = colorData.IceIcon;
+				image.color = colorData.IceColor;
+				image.sprite = colorData.IceIcon;
 				break;
 			case ElementType.Rock:
-				spriteRenderer.color = colorData.RockColor;
-				spriteRenderer.sprite = colorData.RockIcon;
+				image.color = colorData.RockColor;
+				image.sprite = colorData.RockIcon;
 				break;
 			default:
 				break;

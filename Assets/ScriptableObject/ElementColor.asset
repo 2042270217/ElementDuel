@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c299b21c810bf14eb5e6078c03fd89b, type: 3}
   m_Name: ElementColor
   m_EditorClassIdentifier: 
-  FireColor: {r: 0.90199995, g: 0.4966478, b: 0.26658303, a: 1}
+  FireColor: {r: 0.9019608, g: 0.446053, b: 0.18490195, a: 1}
   FireIcon: {fileID: 21300000, guid: d684641e7541b544bbe58764408305e5, type: 3}
   FireCostIcon: {fileID: 21300000, guid: 7627caec78ef96d47882e71570eee765, type: 3}
   WaterColor: {r: 0.23299584, g: 0.71008265, b: 0.895, a: 1}
