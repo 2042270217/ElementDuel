@@ -17,7 +17,7 @@ public class SkillCostData : ScriptableObject
 		return skillCostData;
 	}
 
-	//2火2任意
+	//2火1任意
 	public static SkillCostData GetSampleCostData2()
 	{
 		var skillCostData = new SkillCostData();

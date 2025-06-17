@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c299b21c810bf14eb5e6078c03fd89b, type: 3}
+  m_Name: ElementColor
+  m_EditorClassIdentifier: 
+  FireColor: {r: 0.90199995, g: 0.4966478, b: 0.26658303, a: 1}
+  FireIcon: {fileID: 21300000, guid: d684641e7541b544bbe58764408305e5, type: 3}
+  WaterColor: {r: 0.23299584, g: 0.71008265, b: 0.895, a: 1}
+  WaterIcon: {fileID: 21300000, guid: a5316a6a67a89c744a3a5a37ffb9c362, type: 3}
+  WindColor: {r: 0.2555339, g: 0.874, b: 0.6962372, a: 1}
+  WindIcon: {fileID: 21300000, guid: 6e9eb0a7504bc214ea65683c569feab4, type: 3}
+  ThunderColor: {r: 0.7499605, g: 0.5483202, b: 0.895, a: 1}
+  ThunderIcon: {fileID: 21300000, guid: d556f1475b2d2af498a9db074cb0526a, type: 3}
+  GrassColor: {r: 0.70805985, g: 0.845, b: 0.39884, a: 1}
+  GrassIcon: {fileID: 21300000, guid: 4877d5f6138358c4485277802f3d6812, type: 3}
+  IceColor: {r: 0.623693, g: 0.9603746, b: 0.97300005, a: 1}
+  IceIcon: {fileID: 21300000, guid: 007fb2e63b324c94e95aacc9d3978fdd, type: 3}
+  RockColor: {r: 0.824, g: 0.6989019, b: 0.27356797, a: 1}
+  RockIcon: {fileID: 21300000, guid: 863cbde09cdda094381602606fac5dee, type: 3}
