@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Serialization;
 
-namespace CharacterSystem
+namespace CardSystem
 {
     [CreateAssetMenu(fileName = "NewCharacterAbility", menuName = "Character/Ability", order = 0)]
     public class CharacterAbility : ScriptableObject
@@ -16,8 +16,9 @@ namespace CharacterSystem
         [SerializeField] private AbilityType abilityType;
         [SerializeField] private int totalCost;
         [SerializeField] private int specificElementCost;
+        [SerializeField] private int energyCost;
         [SerializeField] private int attackDamage;
-        [SerializeField] private CharacterBuff defenseBuff;
+        [SerializeField] private CharacterBuff[] buffs;
         [SerializeField] private int healAmount;
         [SerializeField] private int energyRestoreAmount;
 
@@ -35,7 +36,13 @@ namespace CharacterSystem
 
         public int TotalCost => totalCost;
 
+        public int SpecificElementCost => specificElementCost;
+
+        public int EnergyCost => energyCost;
+
         public int AttackDamage => attackDamage;
+
+        public CharacterBuff[] Buffs => buffs;
 
         public int HealAmount => healAmount;
 

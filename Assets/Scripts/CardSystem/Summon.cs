@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace CharacterSystem
+namespace CardSystem
 {
     [CreateAssetMenu(fileName = "NewSummon", menuName = "Character/Summon", order = 0)]
     public class Summon : ScriptableObject
@@ -13,6 +13,8 @@ namespace CharacterSystem
 
         [Header("属性")] [SerializeField] private SummonEffectType summonEffectType;
         [SerializeField] private int maxRounds;
+        [SerializeField] private int rounds;
+        [SerializeField] private int remainingRounds;
         [SerializeField] private int attackDamage;
         [SerializeField] private CharacterBuff defenseBuff;
         [SerializeField] private int healAmount;
@@ -26,6 +28,14 @@ namespace CharacterSystem
         public SummonEffectType SummonEffectType => summonEffectType;
 
         public int MaxRounds => maxRounds;
+
+        public int Rounds => rounds;
+
+        public int RemainingRounds
+        {
+            get => remainingRounds;
+            set => remainingRounds = value;
+        }
 
         public int AttackDamage => attackDamage;
 

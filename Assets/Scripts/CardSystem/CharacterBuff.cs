@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Serialization;
 
-namespace CharacterSystem
+namespace CardSystem
 {
     [CreateAssetMenu(fileName = "NewBuff", menuName = "Character/Buff", order = 0)]
     public abstract class CharacterBuff : ScriptableObject
     {
-        private static readonly int InactiveContinuousRounds = -1;
+        protected static readonly int InactiveContinuousRounds = -1;
 
         [Header("基础信息")] [SerializeField] private string buffName;
         [SerializeField] private Sprite icon;
@@ -17,7 +17,7 @@ namespace CharacterSystem
         [Header("属性")] [SerializeField] private bool isPermanent;
         [SerializeField] private bool isOnField;
         [SerializeField] private bool isAlwaysAvailable;
-        [SerializeField] private int continuousRounds = InactiveContinuousRounds;
+        [SerializeField] protected int continuousRounds = InactiveContinuousRounds;
         [SerializeField] private int availableCount = 1;
 
 
@@ -53,6 +53,11 @@ namespace CharacterSystem
         }
 
         public virtual void RemoveBuff(List<Character> target)
+        {
+            // TODO: Implement the logic to remove the buff from the target character
+        }
+
+        public virtual void UpdateBuff(List<Character> target)
         {
         }
 
