@@ -22,31 +22,24 @@ public class ElementColorSetup : MonoBehaviour
 		switch (elementType)
 		{
 			case ElementType.Fire:
-				image.color = colorData.FireColor;
 				image.sprite = colorData.FireIcon;
 				break;
 			case ElementType.Water:
-				image.color = colorData.WaterColor;
 				image.sprite = colorData.WaterIcon;
 				break;
 			case ElementType.Wind:
-				image.color = colorData.WindColor;
 				image.sprite = colorData.WindIcon;
 				break;
 			case ElementType.Thunder:
-				image.color = colorData.ThunderColor;
 				image.sprite = colorData.ThunderIcon;
 				break;
 			case ElementType.Grass:
-				image.color = colorData.GrassColor;
 				image.sprite = colorData.GrassIcon;
 				break;
 			case ElementType.Ice:
-				image.color = colorData.IceColor;
 				image.sprite = colorData.IceIcon;
 				break;
 			case ElementType.Rock:
-				image.color = colorData.RockColor;
 				image.sprite = colorData.RockIcon;
 				break;
 			default:

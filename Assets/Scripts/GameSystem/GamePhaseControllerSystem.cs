@@ -56,7 +56,6 @@ namespace ElementDuel
 
 		public override void Release()
 		{
-			base.Release();
 		}
 	}
 }

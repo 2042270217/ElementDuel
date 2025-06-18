@@ -14,10 +14,10 @@ namespace ElementDuel
 			m_EDGame = edGame;
 		}
 
-		public virtual void Initialize() { }
+		public abstract void Initialize();
 
-		public virtual void Update() { }
+		public abstract void Update();
 
-		public virtual void Release() { }
+		public abstract void Release();
 	}
 }

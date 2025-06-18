@@ -13,23 +13,23 @@ MonoBehaviour:
   m_Name: ElementColor
   m_EditorClassIdentifier: 
   FireColor: {r: 0.9019608, g: 0.446053, b: 0.18490195, a: 1}
-  FireIcon: {fileID: 21300000, guid: d684641e7541b544bbe58764408305e5, type: 3}
+  FireIcon: {fileID: 3280395537608608722, guid: c5e361a68d56820468c199865d416233, type: 3}
   FireCostIcon: {fileID: 21300000, guid: 7627caec78ef96d47882e71570eee765, type: 3}
   WaterColor: {r: 0.23299584, g: 0.71008265, b: 0.895, a: 1}
-  WaterIcon: {fileID: 21300000, guid: a5316a6a67a89c744a3a5a37ffb9c362, type: 3}
+  WaterIcon: {fileID: 1191403712116994253, guid: 6e4109ad3cc048f449954564c5fcd2be, type: 3}
   WaterCostIcon: {fileID: 21300000, guid: 886434e43021ebe41828cf042b9ee263, type: 3}
   WindColor: {r: 0.2555339, g: 0.874, b: 0.6962372, a: 1}
-  WindIcon: {fileID: 21300000, guid: 6e9eb0a7504bc214ea65683c569feab4, type: 3}
+  WindIcon: {fileID: 48536735996352385, guid: 0490e12e9727ac345811865c5c2997d6, type: 3}
   WindCostIcon: {fileID: 21300000, guid: 5611fefb7b372704892521f00350be85, type: 3}
   ThunderColor: {r: 0.7499605, g: 0.5483202, b: 0.895, a: 1}
-  ThunderIcon: {fileID: 21300000, guid: d556f1475b2d2af498a9db074cb0526a, type: 3}
+  ThunderIcon: {fileID: 1649694098470023408, guid: ced02b90100510949880c24675fd891e, type: 3}
   ThunderCostIcon: {fileID: 21300000, guid: 266ae7ff725e06d4493878d484aa5ec9, type: 3}
   GrassColor: {r: 0.70805985, g: 0.845, b: 0.39884, a: 1}
-  GrassIcon: {fileID: 21300000, guid: 4877d5f6138358c4485277802f3d6812, type: 3}
+  GrassIcon: {fileID: 777548611219748368, guid: ba15d5f872f63924ebe51be093604918, type: 3}
   GrassCostIcon: {fileID: 21300000, guid: 3d964cd608d493349b554517e19ec570, type: 3}
   IceColor: {r: 0.623693, g: 0.9603746, b: 0.97300005, a: 1}
-  IceIcon: {fileID: 21300000, guid: 007fb2e63b324c94e95aacc9d3978fdd, type: 3}
+  IceIcon: {fileID: 2309884463085003180, guid: 79aa545dd040dda44b422a83ecb5d122, type: 3}
   IceCostIcon: {fileID: 21300000, guid: 0023fd86691128047b17fc5f84e49395, type: 3}
   RockColor: {r: 0.824, g: 0.6989019, b: 0.27356797, a: 1}
-  RockIcon: {fileID: 21300000, guid: 863cbde09cdda094381602606fac5dee, type: 3}
+  RockIcon: {fileID: 9138587174474639780, guid: 8c10a78f3d8d1554c90954b847e3f4e2, type: 3}
   RockCostIcon: {fileID: 21300000, guid: a400888bb546a1349919c4c9cd490c70, type: 3}

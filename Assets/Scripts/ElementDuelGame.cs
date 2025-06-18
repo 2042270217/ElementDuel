@@ -11,10 +11,8 @@ namespace ElementDuel
 	public class ElementDuelGame
 	{
 		GamePhaseControllerSystem m_phaseSystem;
-
-
-
-
+		PlayerSystem m_currentPlayer;
+		PlayerSystem m_enemyPlayer;
 
 
 		public void Initialize()
