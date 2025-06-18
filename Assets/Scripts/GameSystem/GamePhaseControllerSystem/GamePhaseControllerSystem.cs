@@ -11,9 +11,17 @@ namespace ElementDuel
 	{
 		GamePhaseState m_phaseState;
 
+		public ElementDuelGame EDGame
+		{
+			get
+			{
+				return m_EDGame;
+			}
+		}
+
 		public GamePhaseControllerSystem(ElementDuelGame edGame) : base(edGame)
 		{
-
+			Initialize();
 		}
 
 		public void SetPhaseState(GamePhaseState phaseState)
@@ -46,7 +54,7 @@ namespace ElementDuel
 
 		public override void Initialize()
 		{
-			SetPhaseState(new ThrowingPhaseState(this));
+
 		}
 
 		public override void Update()
@@ -56,6 +64,7 @@ namespace ElementDuel
 
 		public override void Release()
 		{
+
 		}
 	}
 }

@@ -5,6 +5,7 @@ public class PlayerSystem : IGameSystem
 	CharacterField m_charField;
 	AssitField m_assitField;
 	SummonField m_summonField;
+	DiceField m_diceField;
 
 	public PlayerSystem(ElementDuelGame edGame) : base(edGame)
 	{

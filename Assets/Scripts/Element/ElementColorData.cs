@@ -32,4 +32,6 @@ public class ElementColorData : ScriptableObject
 	public Sprite RockIcon;
 	public Sprite RockCostIcon;
 
+	public Sprite AllDiceIcon;
+
 }

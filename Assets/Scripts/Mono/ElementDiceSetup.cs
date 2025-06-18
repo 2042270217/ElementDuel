@@ -1,14 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-[ExecuteInEditMode]
-public class ElementColorSetup : MonoBehaviour
+public class ElementDiceSetup : MonoBehaviour
 {
 	public ElementColorData colorData;
-	public ElementType elementType;
-
+	public ElementType elementType = ElementType.Fire;
 	Image image;
 	// Start is called before the first frame update
 	void Start()
@@ -22,26 +18,29 @@ public class ElementColorSetup : MonoBehaviour
 		switch (elementType)
 		{
 			case ElementType.Fire:
-				image.sprite = colorData.FireIcon;
+				image.sprite = colorData.FireCostIcon;
 				break;
 			case ElementType.Water:
-				image.sprite = colorData.WaterIcon;
+				image.sprite = colorData.WaterCostIcon;
 				break;
 			case ElementType.Wind:
-				image.sprite = colorData.WindIcon;
+				image.sprite = colorData.WindCostIcon;
 				break;
 			case ElementType.Thunder:
-				image.sprite = colorData.ThunderIcon;
+				image.sprite = colorData.ThunderCostIcon;
 				break;
 			case ElementType.Grass:
-				image.sprite = colorData.GrassIcon;
+				image.sprite = colorData.GrassCostIcon;
 				break;
 			case ElementType.Ice:
-				image.sprite = colorData.IceIcon;
+				image.sprite = colorData.IceCostIcon;
 				break;
 			case ElementType.Rock:
-				image.sprite = colorData.RockIcon;
+				image.sprite = colorData.RockCostIcon;
 				break;
+			case ElementType.All:
+				image.sprite = colorData.AllDiceIcon;
+				break;                         
 			default:
 				break;
 
