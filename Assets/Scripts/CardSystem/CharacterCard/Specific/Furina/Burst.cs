@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace CardSystem.Specific.Furina
+namespace CardSystem.CharacterCard.Specific.Furina
 {
     [CreateAssetMenu(fileName = "NewBurst", menuName = "Character/Specific/Furina/Burst", order = 0)]
     public class Burst : CharacterAbility
@@ -14,7 +14,7 @@ namespace CardSystem.Specific.Furina
         {
         }
 
-        public override void ApplyEffect(List<Character> target, List<CardSystem.Summon> summonsOnFiled = null)
+        public override void ApplyEffect(List<Character> target, List<CharacterCard.Summon> summonsOnFiled = null)
         {
             BeforeApplyEffect(target);
 

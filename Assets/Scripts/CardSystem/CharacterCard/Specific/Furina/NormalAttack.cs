@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace CardSystem.Specific.Furina
+namespace CardSystem.CharacterCard.Specific.Furina
 {
     [CreateAssetMenu(fileName = "NewNormalAttack", menuName = "Character/Specific/Furina/NormalAttack", order = 0)]
     public class NormalAttack : Specific.NormalAttack
@@ -15,7 +15,7 @@ namespace CardSystem.Specific.Furina
             // TODO: Generate a specific card for Furina's normal attack (if the card is not already generated)
         }
 
-        public override void ApplyEffect(List<Character> target, List<CardSystem.Summon> summonsOnFiled = null)
+        public override void ApplyEffect(List<Character> target, List<CharacterCard.Summon> summonsOnFiled = null)
         {
             BeforeApplyEffect(target);
             // TODO: Attack the target character with Furina's normal attack damage

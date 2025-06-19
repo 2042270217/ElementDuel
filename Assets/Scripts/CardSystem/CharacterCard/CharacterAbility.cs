@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Serialization;
 
-namespace CardSystem
+namespace CardSystem.CharacterCard
 {
     [CreateAssetMenu(fileName = "NewCharacterAbility", menuName = "Character/Ability", order = 0)]
     public class CharacterAbility : ScriptableObject

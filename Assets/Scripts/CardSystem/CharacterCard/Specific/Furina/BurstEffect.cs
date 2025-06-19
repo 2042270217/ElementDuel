@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace CardSystem.Specific.Furina
+namespace CardSystem.CharacterCard.Specific.Furina
 {
     public class BurstEffect : BufferEffect
     {
