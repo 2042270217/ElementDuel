@@ -6,7 +6,7 @@ using UnityEngine;
 namespace CardSystem.ActionCard
 {
     [CreateAssetMenu(fileName = "NewAction", menuName = "Card/Action", order = 0)]
-    public class Action : ScriptableObject
+    public class ActionData : ScriptableObject
     {
         [Header("基础信息")] [SerializeField] private string actionName;
         [SerializeField] private Sprite actionImage;
@@ -17,10 +17,8 @@ namespace CardSystem.ActionCard
         [SerializeField] private int distinctCost;
         [SerializeField] private int energyCost;
         [SerializeField] private int attackDamage;
-        [SerializeField] private CharacterBuff[] buffs;
         [SerializeField] private int healAmount;
         [SerializeField] private int energyRestoreAmount;
-        [SerializeField] private List<Summon> summonUnits;
 
 
         public string ActionName => actionName;
@@ -39,13 +37,71 @@ namespace CardSystem.ActionCard
 
         public int AttackDamage => attackDamage;
 
-        public CharacterBuff[] Buffs => buffs;
 
         public int HealAmount => healAmount;
 
         public int EnergyRestoreAmount => energyRestoreAmount;
 
-        public List<Summon> SummonUnits => summonUnits;
+
+        public virtual void BeforeApplyEffect(Character target)
+        {
+            // TODO: Override this method to implement pre-effect logic
+        }
+
+        public virtual void AfterApplyEffect(Character target)
+        {
+            // TODO: Override this method to implement post-effect logic
+        }
+
+        public virtual void ApplyEffect(Character target, Character[] charactersOnField = null)
+        {
+            BeforeApplyEffect(target);
+
+            // TODO: Apply attack damage if the action type includes attack
+
+            AfterApplyEffect(target);
+        }
+    }
+
+
+    public class Action
+    {
+        private ActionData _actionData;
+
+        private List<CharacterBuff> _buffs;
+        private List<Summon> _summonUnits;
+
+
+        public string ActionName => _actionData.ActionName;
+
+        public Sprite ActionImage => _actionData.ActionImage;
+
+        public string Description => _actionData.Description;
+
+        public ActionType ActionType => _actionData.ActionType;
+
+        public int IdentityCost => _actionData.IdentityCost;
+
+        public int DistinctCost => _actionData.DistinctCost;
+
+        public int EnergyCost => _actionData.EnergyCost;
+
+        public int AttackDamage => _actionData.AttackDamage;
+
+        public List<CharacterBuff> Buffs => _buffs;
+
+        public int HealAmount => _actionData.HealAmount;
+
+        public int EnergyRestoreAmount => _actionData.EnergyRestoreAmount;
+
+        public List<Summon> SummonUnits => _summonUnits;
+        
+        public virtual void Initialize(ActionData actionData)
+        {
+            _actionData = actionData;
+            _buffs = new List<CharacterBuff>();
+            _summonUnits = new List<Summon>();
+        }
 
 
         public virtual void BeforeApplyEffect(Character target)
