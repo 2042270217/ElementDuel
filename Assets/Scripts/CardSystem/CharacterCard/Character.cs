@@ -6,7 +6,7 @@ using UnityEngine;
 namespace CardSystem.CharacterCard
 {
     [CreateAssetMenu(fileName = "NewCharacter", menuName = "Card/Character", order = 0)]
-    public class Character : ScriptableObject
+    public class CharacterData : ScriptableObject
     {
         [Header("基础信息")] [SerializeField] private string characterName;
         [SerializeField] private Sprite characterImage;
@@ -20,10 +20,6 @@ namespace CardSystem.CharacterCard
 
         [Header("技能信息")] [SerializeField] private CharacterAbility[] abilities;
 
-        private int _currentHp = 10;
-        private int _currentEnergy;
-
-        private List<CharacterBuff> _buffs;
 
         public string CharacterName => characterName;
 
@@ -31,14 +27,36 @@ namespace CardSystem.CharacterCard
 
         public int MaxHp => maxHp;
 
-        public int CurrentHp => _currentHp;
 
         public int MaxEnergy => maxEnergy;
+
+
+        public CharacterAbility[] Abilities => abilities;
+    }
+
+    public class Character
+    {
+        private CharacterData _characterData;
+
+        private int _currentHp = 10;
+        private int _currentEnergy;
+
+        private List<CharacterBuff> _buffs;
+
+        public string CharacterName => _characterData.CharacterName;
+
+        public Sprite CharacterImage => _characterData.CharacterImage;
+
+        public int MaxHp => _characterData.MaxHp;
+
+        public int CurrentHp => _currentHp;
+
+        public int MaxEnergy => _characterData.MaxEnergy;
 
         public int CurrentEnergy => _currentEnergy;
 
 
-        public CharacterAbility[] Abilities => abilities;
+        public CharacterAbility[] Abilities => _characterData.Abilities;
 
 
         public bool CanUseEnergy(int amount = 0)
@@ -49,6 +67,15 @@ namespace CardSystem.CharacterCard
             }
 
             return _currentEnergy >= amount;
+        }
+
+        public virtual void Initialize(CharacterData characterData)
+        {
+            _characterData = characterData ??
+                             throw new ArgumentNullException(nameof(characterData), "Character data cannot be null.");
+            _currentHp = MaxHp;
+            _currentEnergy = 0;
+            _buffs = new List<CharacterBuff>();
         }
 
 
@@ -70,7 +97,7 @@ namespace CardSystem.CharacterCard
                 throw new ArgumentOutOfRangeException(nameof(amount), "Heal amount cannot be negative.");
             }
 
-            _currentHp = Mathf.Min(_currentHp + amount, maxHp);
+            _currentHp = Mathf.Min(_currentHp + amount, MaxHp);
         }
 
 
@@ -81,7 +108,7 @@ namespace CardSystem.CharacterCard
                 throw new ArgumentOutOfRangeException(nameof(amount), "Energy restoration amount cannot be negative.");
             }
 
-            _currentEnergy = Mathf.Min(_currentEnergy + amount, maxEnergy);
+            _currentEnergy = Mathf.Min(_currentEnergy + amount, MaxEnergy);
         }
 
 

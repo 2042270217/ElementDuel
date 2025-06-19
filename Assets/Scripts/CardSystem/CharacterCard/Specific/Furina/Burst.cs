@@ -3,7 +3,6 @@ using UnityEngine;
 
 namespace CardSystem.CharacterCard.Specific.Furina
 {
-    [CreateAssetMenu(fileName = "NewBurst", menuName = "Character/Specific/Furina/Burst", order = 0)]
     public class Burst : CharacterAbility
     {
         public override void BeforeApplyEffect(List<Character> target)

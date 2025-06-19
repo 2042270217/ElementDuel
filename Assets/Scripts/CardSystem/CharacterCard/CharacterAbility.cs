@@ -6,7 +6,7 @@ using UnityEngine.Serialization;
 namespace CardSystem.CharacterCard
 {
     [CreateAssetMenu(fileName = "NewCharacterAbility", menuName = "Character/Ability", order = 0)]
-    public class CharacterAbility : ScriptableObject
+    public class CharacterAbilityData : ScriptableObject
     {
         [Header("基础信息")] [SerializeField] private string abilityName;
         [SerializeField] private Sprite icon;
@@ -49,6 +49,43 @@ namespace CardSystem.CharacterCard
         public int EnergyRestoreAmount => energyRestoreAmount;
 
         public Summon SummonUnit => summonUnit;
+    }
+
+    public class CharacterAbility
+    {
+        private CharacterAbilityData _abilityData;
+
+        public string AbilityName => _abilityData.AbilityName;
+
+        public Sprite Icon => _abilityData.Icon;
+
+        public string Description => _abilityData.Description;
+
+        public AbilityEffectType AbilityEffectType => _abilityData.AbilityEffectType;
+
+        public AbilityType AbilityType => _abilityData.AbilityType;
+
+        public int TotalCost => _abilityData.TotalCost;
+
+        public int SpecificElementCost => _abilityData.SpecificElementCost;
+
+        public int EnergyCost => _abilityData.EnergyCost;
+
+        public int AttackDamage => _abilityData.AttackDamage;
+
+        public CharacterBuff[] Buffs => _abilityData.Buffs;
+
+        public int HealAmount => _abilityData.HealAmount;
+
+        public int EnergyRestoreAmount => _abilityData.EnergyRestoreAmount;
+
+        public Summon SummonUnit => _abilityData.SummonUnit;
+
+        public virtual void Initialize(CharacterAbilityData abilityData)
+        {
+            _abilityData = abilityData ??
+                           throw new ArgumentNullException(nameof(abilityData), "Ability data cannot be null.");
+        }
 
         public virtual void BeforeApplyEffect(List<Character> target)
         {
@@ -64,52 +101,52 @@ namespace CardSystem.CharacterCard
         {
             BeforeApplyEffect(target);
 
-            if (abilityEffectType.HasFlag(AbilityEffectType.Attack))
+            if (AbilityEffectType.HasFlag(AbilityEffectType.Attack))
             {
                 if (target.Count != 1)
                 {
                     throw new ArgumentException("Target must contain exactly one character.");
                 }
 
-                target[0].TakeDamage(attackDamage);
+                target[0].TakeDamage(AttackDamage);
             }
 
-            if (abilityEffectType.HasFlag(AbilityEffectType.Defense))
+            if (AbilityEffectType.HasFlag(AbilityEffectType.Defense))
             {
                 // target.AddDefense(defenseValue);
             }
 
-            if (abilityEffectType.HasFlag(AbilityEffectType.Buff))
+            if (AbilityEffectType.HasFlag(AbilityEffectType.Buff))
             {
             }
 
-            if (abilityEffectType.HasFlag(AbilityEffectType.Heal))
-            {
-                if (target.Count != 1)
-                {
-                    throw new ArgumentException("Target must contain exactly one character.");
-                }
-
-                target[0].Heal(healAmount);
-            }
-
-            if (abilityEffectType.HasFlag(AbilityEffectType.Energy))
+            if (AbilityEffectType.HasFlag(AbilityEffectType.Heal))
             {
                 if (target.Count != 1)
                 {
                     throw new ArgumentException("Target must contain exactly one character.");
                 }
 
-                target[0].RestoreEnergy(energyRestoreAmount);
+                target[0].Heal(HealAmount);
             }
 
-            if (abilityEffectType.HasFlag(AbilityEffectType.Summon))
+            if (AbilityEffectType.HasFlag(AbilityEffectType.Energy))
+            {
+                if (target.Count != 1)
+                {
+                    throw new ArgumentException("Target must contain exactly one character.");
+                }
+
+                target[0].RestoreEnergy(EnergyRestoreAmount);
+            }
+
+            if (AbilityEffectType.HasFlag(AbilityEffectType.Summon))
             {
                 if (summonsOnFiled != null)
                 {
                     if (summonsOnFiled.Count < 4)
                     {
-                        summonsOnFiled.Add(summonUnit);
+                        summonsOnFiled.Add(SummonUnit);
                     }
                     else
                     {
