@@ -1,10 +1,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace CardSystem.Specific.Furina
+namespace CardSystem.CharacterCard.Specific.Furina
 {
     [CreateAssetMenu(fileName = "NewFurinaSummon", menuName = "Character/Specific/Furina/Summon", order = 0)]
-    public class Summon : CardSystem.Summon
+    public class Summon : CharacterCard.Summon
     {
         public override void BeforeApplyEffect(List<Character> target)
         {
@@ -15,7 +15,7 @@ namespace CardSystem.Specific.Furina
             // TODO: Another attack and attack our side character in some cases
         }
 
-        public override void ApplyEffect(List<Character> target, List<CardSystem.Summon> summonsOnFiled = null)
+        public override void ApplyEffect(List<Character> target, List<CharacterCard.Summon> summonsOnFiled = null)
         {
             BeforeApplyEffect(target);
 
@@ -26,7 +26,7 @@ namespace CardSystem.Specific.Furina
     }
 
     [CreateAssetMenu(fileName = "NewOusiaSummon", menuName = "Character/Specific/Furina/OusiaSummon", order = 1)]
-    public class SummonOusia : CardSystem.Summon
+    public class SummonOusia : CharacterCard.Summon
     {
 
         public override void BeforeApplyEffect(List<Character> target)
@@ -41,7 +41,7 @@ namespace CardSystem.Specific.Furina
             }
         }
 
-        public override void ApplyEffect(List<Character> target, List<CardSystem.Summon> summonsOnFiled = null)
+        public override void ApplyEffect(List<Character> target, List<CharacterCard.Summon> summonsOnFiled = null)
         {
             BeforeApplyEffect(target);
 

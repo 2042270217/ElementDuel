@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace CardSystem
+namespace CardSystem.CharacterCard
 {
     [CreateAssetMenu(fileName = "NewBuffEffect", menuName = "Character/BuffEffect", order = 0)]
     public class BufferEffect : ScriptableObject

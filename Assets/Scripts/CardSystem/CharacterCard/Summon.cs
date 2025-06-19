@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace CardSystem
+namespace CardSystem.CharacterCard
 {
     [CreateAssetMenu(fileName = "NewSummon", menuName = "Character/Summon", order = 0)]
     public class Summon : ScriptableObject

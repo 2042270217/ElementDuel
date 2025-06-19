@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Serialization;
 
-namespace CardSystem
+namespace CardSystem.CharacterCard
 {
     [CreateAssetMenu(fileName = "NewBuff", menuName = "Character/Buff", order = 0)]
     public abstract class CharacterBuff : ScriptableObject

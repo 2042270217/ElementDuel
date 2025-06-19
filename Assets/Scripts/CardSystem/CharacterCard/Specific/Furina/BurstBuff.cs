@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace CardSystem.Specific.Furina
+namespace CardSystem.CharacterCard.Specific.Furina
 {
     public class BurstBuff : CharacterBuff
     {
