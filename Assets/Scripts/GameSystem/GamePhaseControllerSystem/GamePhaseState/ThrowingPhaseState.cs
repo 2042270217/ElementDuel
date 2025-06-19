@@ -26,13 +26,14 @@ namespace ElementDuel.GamePhase
 			base.GamePhaseStart();
 
 			var diceList = m_controller.EDGame.ThrowDice();
+			m_controller.EDGame.ShowInfo("投掷阶段");
 			m_controller.EDGame.ShowThrowUI(diceList);
 		}
 
 		public override void GamePhaseUpdate()
 		{
 			base.GamePhaseUpdate();
-			if(Input.GetKeyUp(KeyCode.R))
+			if (Input.GetKeyUp(KeyCode.R))
 			{
 				EDebug.Log("throw again");
 				var diceList = m_controller.EDGame.ThrowDice();

@@ -1,0 +1,715 @@
+fileFormatVersion: 2
+guid: ad23fdd289697ee43b81b214d2aec060
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3298341275442706501
+    second: SpriteAtlasTexture-ui_sprite_activity_alchemysim-1024x1024-fmt25_0
+  - first:
+      213: -4727582297639934590
+    second: SpriteAtlasTexture-ui_sprite_activity_alchemysim-1024x1024-fmt25_1
+  - first:
+      213: 8058709481533398025
+    second: SpriteAtlasTexture-ui_sprite_activity_alchemysim-1024x1024-fmt25_2
+  - first:
+      213: -2187323445981215638
+    second: SpriteAtlasTexture-ui_sprite_activity_alchemysim-1024x1024-fmt25_3
+  - first:
+      213: -1329504919105235432
+    second: SpriteAtlasTexture-ui_sprite_activity_alchemysim-1024x1024-fmt25_4
+  - first:
+      213: -760221008208659152
+    second: SpriteAtlasTexture-ui_sprite_activity_alchemysim-1024x1024-fmt25_5
+  - first:
+      213: 285133267918529790
+    second: SpriteAtlasTexture-ui_sprite_activity_alchemysim-1024x1024-fmt25_6
+  - first:
+      213: -758665658360499814
+    second: SpriteAtlasTexture-ui_sprite_activity_alchemysim-1024x1024-fmt25_7
+  - first:
+      213: 6260409542086712054
+    second: SpriteAtlasTexture-ui_sprite_activity_alchemysim-1024x1024-fmt25_8
+  - first:
+      213: 8383866611191699541
+    second: SpriteAtlasTexture-ui_sprite_activity_alchemysim-1024x1024-fmt25_9
+  - first:
+      213: -4338883413632034218
+    second: SpriteAtlasTexture-ui_sprite_activity_alchemysim-1024x1024-fmt25_10
+  - first:
+      213: 397982703531977569
+    second: SpriteAtlasTexture-ui_sprite_activity_alchemysim-1024x1024-fmt25_11
+  - first:
+      213: 648043099371260739
+    second: SpriteAtlasTexture-ui_sprite_activity_alchemysim-1024x1024-fmt25_12
+  - first:
+      213: 5909081791291427521
+    second: SpriteAtlasTexture-ui_sprite_activity_alchemysim-1024x1024-fmt25_13
+  - first:
+      213: 6339507716287730303
+    second: SpriteAtlasTexture-ui_sprite_activity_alchemysim-1024x1024-fmt25_14
+  - first:
+      213: -2412417345266978077
+    second: SpriteAtlasTexture-ui_sprite_activity_alchemysim-1024x1024-fmt25_15
+  - first:
+      213: 154039084048394387
+    second: SpriteAtlasTexture-ui_sprite_activity_alchemysim-1024x1024-fmt25_16
+  - first:
+      213: -452149736965234191
+    second: SpriteAtlasTexture-ui_sprite_activity_alchemysim-1024x1024-fmt25_17
+  - first:
+      213: -4414809496119872843
+    second: SpriteAtlasTexture-ui_sprite_activity_alchemysim-1024x1024-fmt25_18
+  - first:
+      213: -840644417483905694
+    second: SpriteAtlasTexture-ui_sprite_activity_alchemysim-1024x1024-fmt25_19
+  - first:
+      213: 1847916728261361805
+    second: SpriteAtlasTexture-ui_sprite_activity_alchemysim-1024x1024-fmt25_20
+  - first:
+      213: -6701526657428591481
+    second: SpriteAtlasTexture-ui_sprite_activity_alchemysim-1024x1024-fmt25_21
+  - first:
+      213: 805640690898646569
+    second: SpriteAtlasTexture-ui_sprite_activity_alchemysim-1024x1024-fmt25_22
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-ui_sprite_activity_alchemysim-1024x1024-fmt25_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 847
+        width: 380
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54875c62aef06cd20800000000000000
+      internalID: 3298341275442706501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-ui_sprite_activity_alchemysim-1024x1024-fmt25_1
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 843
+        width: 25
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2852fb6b2f0446eb0800000000000000
+      internalID: -4727582297639934590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-ui_sprite_activity_alchemysim-1024x1024-fmt25_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 643
+        width: 201
+        height: 202
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90cdeda939946df60800000000000000
+      internalID: 8058709481533398025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-ui_sprite_activity_alchemysim-1024x1024-fmt25_3
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 647
+        width: 194
+        height: 194
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6408613ae015a1e0800000000000000
+      internalID: -2187323445981215638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-ui_sprite_activity_alchemysim-1024x1024-fmt25_4
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 835
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8161991f156ac8de0800000000000000
+      internalID: -1329504919105235432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-ui_sprite_activity_alchemysim-1024x1024-fmt25_5
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 411
+        width: 310
+        height: 238
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03dfee655072375f0800000000000000
+      internalID: -760221008208659152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-ui_sprite_activity_alchemysim-1024x1024-fmt25_6
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 495
+        width: 114
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef42eeb423ff4f300800000000000000
+      internalID: 285133267918529790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-ui_sprite_activity_alchemysim-1024x1024-fmt25_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 326
+        height: 475
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9172227a9da875f0800000000000000
+      internalID: -758665658360499814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-ui_sprite_activity_alchemysim-1024x1024-fmt25_8
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 394
+        width: 60
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fa5b883f4171e650800000000000000
+      internalID: 6260409542086712054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-ui_sprite_activity_alchemysim-1024x1024-fmt25_9
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 415
+        width: 63
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 558d654634a795470800000000000000
+      internalID: 8383866611191699541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-ui_sprite_activity_alchemysim-1024x1024-fmt25_10
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 314
+        width: 86
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65ad0a0168039c3c0800000000000000
+      internalID: -4338883413632034218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-ui_sprite_activity_alchemysim-1024x1024-fmt25_11
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 269
+        width: 467
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16be5c6092be58500800000000000000
+      internalID: 397982703531977569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-ui_sprite_activity_alchemysim-1024x1024-fmt25_12
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 313
+        width: 139
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34bca21f3cf4ef800800000000000000
+      internalID: 648043099371260739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-ui_sprite_activity_alchemysim-1024x1024-fmt25_13
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 175
+        width: 361
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ca87aed496410250800000000000000
+      internalID: 5909081791291427521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-ui_sprite_activity_alchemysim-1024x1024-fmt25_14
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 1
+        width: 184
+        height: 181
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f729d280ea47af750800000000000000
+      internalID: 6339507716287730303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-ui_sprite_activity_alchemysim-1024x1024-fmt25_15
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 120
+        width: 27
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e2fe5db43f558ed0800000000000000
+      internalID: -2412417345266978077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-ui_sprite_activity_alchemysim-1024x1024-fmt25_16
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 0
+        width: 127
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3982b361bb1432200800000000000000
+      internalID: 154039084048394387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-ui_sprite_activity_alchemysim-1024x1024-fmt25_17
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 127
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f1a6e6b534a9b9f0800000000000000
+      internalID: -452149736965234191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-ui_sprite_activity_alchemysim-1024x1024-fmt25_18
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 87
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b2f0c867227bb2c0800000000000000
+      internalID: -4414809496119872843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-ui_sprite_activity_alchemysim-1024x1024-fmt25_19
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 58
+        width: 34
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 265e4713b5e6554f0800000000000000
+      internalID: -840644417483905694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-ui_sprite_activity_alchemysim-1024x1024-fmt25_20
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 0
+        width: 86
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d804582497e15a910800000000000000
+      internalID: 1847916728261361805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-ui_sprite_activity_alchemysim-1024x1024-fmt25_21
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 0
+        width: 44
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78c6823e2056ff2a0800000000000000
+      internalID: -6701526657428591481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-ui_sprite_activity_alchemysim-1024x1024-fmt25_22
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 0
+        width: 127
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9263d9d90f53e2b00800000000000000
+      internalID: 805640690898646569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: eb707bd5b56e98b44b4eb1f8140570c8
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      SpriteAtlasTexture-ui_sprite_activity_alchemysim-1024x1024-fmt25_0: 3298341275442706501
+      SpriteAtlasTexture-ui_sprite_activity_alchemysim-1024x1024-fmt25_1: -4727582297639934590
+      SpriteAtlasTexture-ui_sprite_activity_alchemysim-1024x1024-fmt25_10: -4338883413632034218
+      SpriteAtlasTexture-ui_sprite_activity_alchemysim-1024x1024-fmt25_11: 397982703531977569
+      SpriteAtlasTexture-ui_sprite_activity_alchemysim-1024x1024-fmt25_12: 648043099371260739
+      SpriteAtlasTexture-ui_sprite_activity_alchemysim-1024x1024-fmt25_13: 5909081791291427521
+      SpriteAtlasTexture-ui_sprite_activity_alchemysim-1024x1024-fmt25_14: 6339507716287730303
+      SpriteAtlasTexture-ui_sprite_activity_alchemysim-1024x1024-fmt25_15: -2412417345266978077
+      SpriteAtlasTexture-ui_sprite_activity_alchemysim-1024x1024-fmt25_16: 154039084048394387
+      SpriteAtlasTexture-ui_sprite_activity_alchemysim-1024x1024-fmt25_17: -452149736965234191
+      SpriteAtlasTexture-ui_sprite_activity_alchemysim-1024x1024-fmt25_18: -4414809496119872843
+      SpriteAtlasTexture-ui_sprite_activity_alchemysim-1024x1024-fmt25_19: -840644417483905694
+      SpriteAtlasTexture-ui_sprite_activity_alchemysim-1024x1024-fmt25_2: 8058709481533398025
+      SpriteAtlasTexture-ui_sprite_activity_alchemysim-1024x1024-fmt25_20: 1847916728261361805
+      SpriteAtlasTexture-ui_sprite_activity_alchemysim-1024x1024-fmt25_21: -6701526657428591481
+      SpriteAtlasTexture-ui_sprite_activity_alchemysim-1024x1024-fmt25_22: 805640690898646569
+      SpriteAtlasTexture-ui_sprite_activity_alchemysim-1024x1024-fmt25_3: -2187323445981215638
+      SpriteAtlasTexture-ui_sprite_activity_alchemysim-1024x1024-fmt25_4: -1329504919105235432
+      SpriteAtlasTexture-ui_sprite_activity_alchemysim-1024x1024-fmt25_5: -760221008208659152
+      SpriteAtlasTexture-ui_sprite_activity_alchemysim-1024x1024-fmt25_6: 285133267918529790
+      SpriteAtlasTexture-ui_sprite_activity_alchemysim-1024x1024-fmt25_7: -758665658360499814
+      SpriteAtlasTexture-ui_sprite_activity_alchemysim-1024x1024-fmt25_8: 6260409542086712054
+      SpriteAtlasTexture-ui_sprite_activity_alchemysim-1024x1024-fmt25_9: 8383866611191699541
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
