@@ -4,4 +4,5 @@
 public class GameAssetData : ScriptableObject
 {
 	public GameObject DicePrefab;
+	public ElementColorData ElementColor;
 }

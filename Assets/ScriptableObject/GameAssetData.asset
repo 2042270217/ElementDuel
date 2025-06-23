@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: GameAssetData
   m_EditorClassIdentifier: 
   DicePrefab: {fileID: 5034977698822824033, guid: 4fb8ffa7539efcf448208715ddaa494c, type: 3}
+  ElementColor: {fileID: 11400000, guid: 48425a7f011ae85469846e109db325d5, type: 2}

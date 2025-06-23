@@ -22,6 +22,8 @@ namespace ElementDuel.GamePhase
 		public override void GamePhaseStart()
 		{
 			base.GamePhaseStart();
+			m_controller.EDGame.UpdateInfoUI("行动阶段");
+			m_controller.EDGame.UpdateDiceListUI();
 		}
 
 		public override void GamePhaseUpdate()

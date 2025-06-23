@@ -18,7 +18,8 @@ public enum ElementCostType
 {
 	Any,        //任意元素骰
 	Same,       //相同元素骰
-	Specific    //指定元素骰
+	Specific,   //指定元素骰
+	Energy		//角色充能
 }
 
 [System.Serializable]

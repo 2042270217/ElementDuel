@@ -9,11 +9,14 @@ namespace ElementDuel.GamePhase
 {
 	public class ThrowingPhaseState : GamePhaseState
 	{
-		bool isFirst;
+		public static bool m_isCurrentPlayerFinished;
+		public static bool m_isOppsitePlayerFinished;
 
-		public ThrowingPhaseState(GamePhaseControllerSystem controller) : base(controller)
+		public ThrowingPhaseState(GamePhaseControllerSystem controller, bool isCurrentPlayerFinished = false, bool isOppsitePlayerFinished = false) : base(controller)
 		{
 			m_gamePhase = GamePhaseEnum.ThrowingPhase;
+			m_isOppsitePlayerFinished = isOppsitePlayerFinished;
+			m_isCurrentPlayerFinished = isCurrentPlayerFinished;
 		}
 
 		public override void GamePhaseEnd()
@@ -24,21 +27,17 @@ namespace ElementDuel.GamePhase
 		public override void GamePhaseStart()
 		{
 			base.GamePhaseStart();
+			m_controller.EDGame.UpdateInfoUI(m_controller.EDGame.CurrentPlayer.m_name + "投掷阶段");
 
-			var diceList = m_controller.EDGame.ThrowDice();
-			m_controller.EDGame.ShowInfo("投掷阶段");
-			m_controller.EDGame.ShowThrowUI(diceList);
+			var diceList = m_controller.EDGame.ThrowDice(true);
+			m_controller.EDGame.UpdateThrowUI(diceList);
 		}
 
 		public override void GamePhaseUpdate()
 		{
 			base.GamePhaseUpdate();
-			if (Input.GetKeyUp(KeyCode.R))
-			{
-				EDebug.Log("throw again");
-				var diceList = m_controller.EDGame.ThrowDice();
-				m_controller.EDGame.ShowThrowUI(diceList);
-			}
+
 		}
+
 	}
 }

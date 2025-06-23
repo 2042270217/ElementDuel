@@ -1,6 +1,8 @@
-﻿using NUnit.Framework;
+﻿using ElementDuel.GamePhase;
+using NUnit.Framework;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 using static UnityEditor.Progress;
 
@@ -39,32 +41,53 @@ namespace ElementDuel
 			{
 				if (child.GetComponent<DiceView>().isSelected)
 				{
-					shouldReThrow = true;
 					ElementType e = UnityTools.FindChildGameObject(child.gameObject, "Image").GetComponent<ElementDiceSetup>().elementType;
 					removeElements.Add(e);
 				}
-
 			}
 
-			if (!shouldReThrow)
-			{
-				Hide();
-				return;
-			}
-			else
-			{
-				m_EDGame.ReThrowDice(m_diceList, removeElements);
+			if (removeElements.Count > 0) shouldReThrow = true;
 
-				Clear();
-				foreach (ElementType dice in m_diceList)
+			if (!ThrowingPhaseState.m_isCurrentPlayerFinished)
+			{
+				//currentPlayer正在投掷
+				if (shouldReThrow && m_EDGame.CurrentPlayer.CanRethrow())
 				{
-
-					var item = GameObject.Instantiate(m_dicePrefab, m_diceGroup.transform);
-					item.transform.localScale = Vector3.one * 3;
-					item.GetComponent<DiceView>().CanBeClicked = true;
-					//根据元素设置骰子样式
-					var go = UnityTools.FindChildGameObject(item, "Image");
-					go.GetComponent<ElementDiceSetup>().elementType = dice;
+					//重投流程
+					m_EDGame.ReThrowDice(m_diceList, removeElements, true);
+					m_EDGame.CurrentPlayer.m_countRethrowed++;
+					Clear();
+					GenerateChildDice(m_EDGame.CurrentPlayer.CanRethrow());
+				}
+				else
+				{
+					//currentPlayer结束投掷
+					ThrowingPhaseState.m_isCurrentPlayerFinished = true;
+					m_EDGame.CurrentPlayer.SetDices(m_diceList);
+					Hide();
+					m_EDGame.UpdateInfoUI(m_EDGame.OppsitePlayer.m_name + "投掷阶段");
+					var diceList = m_EDGame.ThrowDice(false);
+					ShowInfo(diceList);
+				}
+			}
+			else if (ThrowingPhaseState.m_isCurrentPlayerFinished && !ThrowingPhaseState.m_isOppsitePlayerFinished)
+			{
+				//oppsitePlayer正在投掷
+				if (shouldReThrow && m_EDGame.OppsitePlayer.CanRethrow())
+				{
+					//重投流程
+					m_EDGame.ReThrowDice(m_diceList, removeElements, false);
+					m_EDGame.OppsitePlayer.m_countRethrowed++;
+					Clear();
+					GenerateChildDice(m_EDGame.OppsitePlayer.CanRethrow());
+				}
+				else
+				{
+					//oppsitePlayer结束投掷
+					ThrowingPhaseState.m_isOppsitePlayerFinished = true;
+					m_EDGame.OppsitePlayer.SetDices(m_diceList);
+					Hide();
+					m_EDGame.SetPhaseState(GamePhaseEnum.ActionPhase);
 				}
 			}
 		}
@@ -95,18 +118,23 @@ namespace ElementDuel
 			Clear();
 
 			m_diceList = dices;
-			foreach (ElementType dice in dices)
+			GenerateChildDice();
+
+			Show();
+		}
+
+		void GenerateChildDice(bool canBeClicked = true)
+		{
+			foreach (ElementType dice in m_diceList)
 			{
 
 				var item = GameObject.Instantiate(m_dicePrefab, m_diceGroup.transform);
 				item.transform.localScale = Vector3.one * 3;
-				item.GetComponent<DiceView>().CanBeClicked = true;
+				item.GetComponent<DiceView>().CanBeClicked = canBeClicked;
 				//根据元素设置骰子样式
 				var go = UnityTools.FindChildGameObject(item, "Image");
 				go.GetComponent<ElementDiceSetup>().elementType = dice;
 			}
-
-			Show();
 		}
 
 	}

@@ -1,5 +1,4 @@
 ﻿using System;
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,11 +7,11 @@ using UnityEngine;
 
 namespace ElementDuel.GamePhase
 {
-	public class EndPhaseState : GamePhaseState
+	public class GameEndSate : GamePhaseState
 	{
-		public EndPhaseState(GamePhaseControllerSystem controller) : base(controller)
+		public GameEndSate(GamePhaseControllerSystem controller) : base(controller)
 		{
-			m_gamePhase = GamePhaseEnum.EndPhase;
+			m_gamePhase = GamePhaseEnum.GameStart;
 		}
 
 		public override void GamePhaseEnd()

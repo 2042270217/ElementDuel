@@ -8,8 +8,10 @@ namespace ElementDuel.GamePhase
 {
 	public enum GamePhaseEnum
 	{
+		GameStart,
 		ThrowingPhase,
 		ActionPhase,
-		EndPhase
+		EndPhase,
+		GameEnd
 	}
 }
