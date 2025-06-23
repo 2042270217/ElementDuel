@@ -5,9 +5,9 @@ namespace CardSystem.CharacterCard.Specific.Furina
 {
     public class BurstBuff : CharacterBuff
     {
-        [SerializeField] private BurstEffect effect;
+        private BurstEffect effect;
 
-        public override void InitBuff(List<Character> target)
+        public override void Initlize(CharacterBuffData buffData)
         {
         }
 
@@ -22,8 +22,8 @@ namespace CardSystem.CharacterCard.Specific.Furina
 
         public override void UpdateRounds(List<Character> target)
         {
-            continuousRounds--;
-            if (continuousRounds <= 0)
+            RemainingRounds--;
+            if (CurrentRemainingRounds <= 0)
             {
                 RemoveBuff(target);
             }

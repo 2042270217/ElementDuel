@@ -3,7 +3,6 @@ using UnityEngine;
 
 namespace CardSystem.CharacterCard.Specific.Furina
 {
-    [CreateAssetMenu(fileName = "NewNormalAttack", menuName = "Character/Specific/Furina/NormalAttack", order = 0)]
     public class NormalAttack : Specific.NormalAttack
     {
         public override void BeforeApplyEffect(List<Character> target)

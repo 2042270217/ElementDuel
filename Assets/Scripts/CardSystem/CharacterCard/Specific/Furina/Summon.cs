@@ -3,7 +3,6 @@ using UnityEngine;
 
 namespace CardSystem.CharacterCard.Specific.Furina
 {
-    [CreateAssetMenu(fileName = "NewFurinaSummon", menuName = "Character/Specific/Furina/Summon", order = 0)]
     public class Summon : CharacterCard.Summon
     {
         public override void BeforeApplyEffect(List<Character> target)
@@ -25,10 +24,8 @@ namespace CardSystem.CharacterCard.Specific.Furina
         }
     }
 
-    [CreateAssetMenu(fileName = "NewOusiaSummon", menuName = "Character/Specific/Furina/OusiaSummon", order = 1)]
     public class SummonOusia : CharacterCard.Summon
     {
-
         public override void BeforeApplyEffect(List<Character> target)
         {
         }

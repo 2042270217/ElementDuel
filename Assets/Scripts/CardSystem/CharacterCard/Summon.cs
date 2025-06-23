@@ -5,7 +5,7 @@ using UnityEngine;
 namespace CardSystem.CharacterCard
 {
     [CreateAssetMenu(fileName = "NewSummon", menuName = "Character/Summon", order = 0)]
-    public class Summon : ScriptableObject
+    public class SummonData : ScriptableObject
     {
         [Header("基础信息")] [SerializeField] private string summonName;
         [SerializeField] private Sprite icon;
@@ -14,10 +14,9 @@ namespace CardSystem.CharacterCard
         [Header("属性")] [SerializeField] private SummonEffectType summonEffectType;
         [SerializeField] private int maxRounds;
         [SerializeField] private int rounds;
-        [SerializeField] private int remainingRounds;
         [SerializeField] private int attackDamage;
-        [SerializeField] private CharacterBuff defenseBuff;
         [SerializeField] private int healAmount;
+
 
         public string SummonName => summonName;
 
@@ -31,17 +30,44 @@ namespace CardSystem.CharacterCard
 
         public int Rounds => rounds;
 
-        public int RemainingRounds
-        {
-            get => remainingRounds;
-            set => remainingRounds = value;
-        }
 
         public int AttackDamage => attackDamage;
 
-        public CharacterBuff DefenseBuff => defenseBuff;
 
         public int HealAmount => healAmount;
+    }
+
+    public class Summon
+    {
+        private SummonData _summonData;
+
+        protected int RemainingRounds;
+
+
+        public string SummonName => _summonData.SummonName;
+
+        public Sprite Icon => _summonData.Icon;
+
+        public string Description => _summonData.Description;
+
+        public SummonEffectType SummonEffectType => _summonData.SummonEffectType;
+
+        public int MaxRounds => _summonData.MaxRounds;
+
+        public int Rounds => _summonData.Rounds;
+
+        public int CurrentRemainingRounds => RemainingRounds;
+
+        public int AttackDamage => _summonData.AttackDamage;
+
+
+        public int HealAmount => _summonData.HealAmount;
+
+        public virtual void Init(SummonData summonData)
+        {
+            _summonData = summonData;
+            RemainingRounds = _summonData.Rounds;
+        }
 
         public virtual void BeforeApplyEffect(List<Character> target)
         {
@@ -55,35 +81,34 @@ namespace CardSystem.CharacterCard
         {
             BeforeApplyEffect(target);
 
-            if (summonEffectType.HasFlag(SummonEffectType.Attack))
+            if (SummonEffectType.HasFlag(SummonEffectType.Attack))
             {
                 foreach (var character in target)
                 {
-                    character.TakeDamage(attackDamage);
+                    character.TakeDamage(AttackDamage);
                 }
             }
 
-            if (summonEffectType.HasFlag(SummonEffectType.Heal))
+            if (SummonEffectType.HasFlag(SummonEffectType.Heal))
             {
                 foreach (var character in target)
                 {
-                    character.Heal(healAmount);
+                    character.Heal(HealAmount);
                 }
             }
 
-            if (summonEffectType.HasFlag(SummonEffectType.Defense))
+            if (SummonEffectType.HasFlag(SummonEffectType.Defense))
             {
                 foreach (var character in target)
                 {
-                    character.AddBuff(defenseBuff);
                 }
             }
 
-            if (summonEffectType.HasFlag(SummonEffectType.EnergyRestore))
+            if (SummonEffectType.HasFlag(SummonEffectType.EnergyRestore))
             {
                 foreach (var character in target)
                 {
-                    character.RestoreEnergy(healAmount);
+                    character.RestoreEnergy(HealAmount);
                 }
             }
 

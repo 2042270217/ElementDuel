@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      UI_Frm_GCGPveHard_MedalBg_0: 4498312340208714907
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
