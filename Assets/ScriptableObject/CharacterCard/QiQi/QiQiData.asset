@@ -16,4 +16,4 @@ MonoBehaviour:
   MaxEnergy: 3
   MaxHp: 10
   weaponType: 0
-  elementType: 1
+  elementType: 32

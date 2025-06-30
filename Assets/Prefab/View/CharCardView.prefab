@@ -130,9 +130,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7f8ef6dca92d82439396256e484cf30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  charGroupView: {fileID: 0}
+  deadColor: {r: 0.39607844, g: 0.39607844, b: 0.39607844, a: 1}
+  frozenColor: {r: 0.4509804, g: 0.96862745, b: 1, a: 1}
   m_energyPrefab: {fileID: 8322474700851764685, guid: b549f103eedc5f5489c7aaabeadf0397, type: 3}
   m_buffPrefab: {fileID: 6103483797436385534, guid: 1b803d3b1139d784da759519c58ee8f1, type: 3}
   m_elementPrefab: {fileID: 980704863202934479, guid: fefbde555a3d2b947b1bbb33bd8b4a77, type: 3}
+  m_isSelected: 0
 --- !u!1 &931536993443817112
 GameObject:
   m_ObjectHideFlags: 0

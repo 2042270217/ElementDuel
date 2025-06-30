@@ -5,7 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "FuNingNa", menuName = "ElementDuel/CharacterCard/FuNingNa")]
 public class FuNingNa : BaseCharacterCard
 {
-
+	bool isHuang = true;
 
 
 #if UNITY_EDITOR

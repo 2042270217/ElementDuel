@@ -24,6 +24,5 @@ public class QiQiBurst : BaseSkill<QiQi>
 		//技能释放后
 		m_owner.InvokeAfterUseBurst();
 		ownerPlayer.AddFightingBuff(Instantiate(buff));
-
 	}
 }

@@ -10,6 +10,7 @@ public abstract class BaseCharacterCard : ScriptableObject
 {
 	public CharacterCardData charData;
 	public List<Skill> skills = new();
+	[HideInInspector] public virtual int id => IdRegistry.GetId(GetType());
 	[HideInInspector] public CharacterAttribute attrib;
 	[HideInInspector] public List<BaseBuff> fightingBuff = new List<BaseBuff>();
 	[HideInInspector] public List<BaseBuff> commonBuff = new List<BaseBuff>();
@@ -30,6 +31,11 @@ public abstract class BaseCharacterCard : ScriptableObject
 	[HideInInspector]
 	public UnityEvent BeforeUseBurst = new UnityEvent();
 
+	[HideInInspector]
+	public UnityEvent AfterTakenFireDamage = new UnityEvent();
+	[HideInInspector]
+	public UnityEvent AfterTakenPhysicalDamage = new UnityEvent();
+
 	public ElementDuelGame game;
 	public PlayerSystem ownerPlayer;
 
@@ -37,6 +43,7 @@ public abstract class BaseCharacterCard : ScriptableObject
 	public int hpLost => charData.MaxHp - attrib.currentHp;
 	public bool canUseBurst => attrib.currentEnergy >= charData.MaxEnergy;
 	public bool isDead => attrib.currentHp <= 0;
+	public bool canAct => !attrib.isFrozen && !isDead;
 
 	//ÊÂ¼þ»ã×Ü
 	void InvokeAfterUseSkill()
@@ -85,6 +92,33 @@ public abstract class BaseCharacterCard : ScriptableObject
 		InvokeBeforeUseSkill();
 	}
 
+	void InvokeAfterReceiveDamage(ElementType ele)
+	{
+		switch (ele)
+		{
+			case ElementType.None:
+				AfterTakenPhysicalDamage?.Invoke();
+				break;
+			case ElementType.Fire:
+				AfterTakenFireDamage?.Invoke();
+				break;
+			case ElementType.Water:
+				break;
+			case ElementType.Wind:
+				break;
+			case ElementType.Thunder:
+				break;
+			case ElementType.Grass:
+				break;
+			case ElementType.Ice:
+				break;
+			case ElementType.Rock:
+				break;
+			case ElementType.All:
+				break;
+		}
+	}
+
 	public void Initialize(ElementDuelGame game, PlayerSystem player)
 	{
 		attrib = new CharacterAttribute();
@@ -100,6 +134,40 @@ public abstract class BaseCharacterCard : ScriptableObject
 		ownerPlayer = player;
 	}
 
+	int GetDamageTakenBonus(ElementType ele)
+	{
+		int count = 0;
+		switch (ele)
+		{
+			case ElementType.None:
+				count += attrib.physicalDamageTakenBonus;
+				break;
+			case ElementType.Fire:
+				count += attrib.fireDamageTakenBonus;
+				break;
+			case ElementType.Water:
+				count += attrib.waterDamageTakenBonus;
+				break;
+			case ElementType.Wind:
+				count += attrib.windDamageTakenBonus;
+				break;
+			case ElementType.Thunder:
+				count += attrib.thunderDamageTakenBonus;
+				break;
+			case ElementType.Grass:
+				count += attrib.grassDamageTakenBonus;
+				break;
+			case ElementType.Ice:
+				count += attrib.iceDamageTakenBonus;
+				break;
+			case ElementType.Rock:
+				count += attrib.rockDamageTakenBonus;
+				break;
+		}
+		count += attrib.damageTakenBonus;
+		return count;
+	}
+
 	public void ReceiveDamage(int count, ElementType ele)
 	{
 		int baseDamage = count;
@@ -108,13 +176,14 @@ public abstract class BaseCharacterCard : ScriptableObject
 			if (attrib.attachedElement.Count > 0)
 			{
 				List<ElementReaction> reactions = new List<ElementReaction>();
-				foreach (var attached in attrib.attachedElement)
+				for (int i = attrib.attachedElement.Count - 1; i >= 0; i--)
 				{
+					var attached = attrib.attachedElement[i];
 					var r = ElementReactionRegistry.GetReaction(ele, attached);
 					if (r != null)
 					{
-						attrib.attachedElement.Remove(attached);
 						reactions.Add(r);
+						attrib.attachedElement.RemoveAt(i);
 					}
 				}
 
@@ -129,7 +198,9 @@ public abstract class BaseCharacterCard : ScriptableObject
 				attrib.attachedElement.Add(ele);
 			}
 		}
+		baseDamage += GetDamageTakenBonus(ele);
 		attrib.currentHp = Mathf.Max(0, attrib.currentHp - baseDamage);
+		InvokeAfterReceiveDamage(ele);
 		if (attrib.currentHp == 0)
 		{
 			ownerPlayer.ForceChangeToNext();
@@ -145,13 +216,14 @@ public abstract class BaseCharacterCard : ScriptableObject
 			if (attrib.attachedElement.Count > 0)
 			{
 				List<ElementReaction> reactions = new List<ElementReaction>();
-				foreach (var attached in attrib.attachedElement)
+				for (int i = attrib.attachedElement.Count - 1; i >= 0; i--)
 				{
+					var attached = attrib.attachedElement[i];
 					var r = ElementReactionRegistry.GetReaction(ele, attached);
 					if (r != null)
 					{
-						attrib.attachedElement.Remove(attached);
 						reactions.Add(r);
+						attrib.attachedElement.RemoveAt(i);
 					}
 				}
 
@@ -169,9 +241,12 @@ public abstract class BaseCharacterCard : ScriptableObject
 
 	public void GetHeal(int count)
 	{
-		attrib.currentHp += count;
-		attrib.currentHp = Mathf.Min(attrib.currentHp, charData.MaxHp);
-		game.GetCharacterUI(ownerPlayer).UpdateCharacter(this);
+		if (!isDead)
+		{
+			attrib.currentHp += count;
+			attrib.currentHp = Mathf.Min(attrib.currentHp, charData.MaxHp);
+			game.GetCharacterUI(ownerPlayer).UpdateCharacter(this);
+		}
 	}
 
 	public void AddEnergy(int count)
@@ -192,19 +267,50 @@ public abstract class BaseCharacterCard : ScriptableObject
 	{
 		if (fightingBuff.Exists(b => b.id == buff.id))
 		{
-			fightingBuff.Find(b => b.id == buff.id).OnDuplicateAdd();
+			var find = fightingBuff.Find(b => b.id == buff.id);
+			if (!find.OnDuplicateAdd())
+			{
+				game.GetCharacterUI(ownerPlayer).UpdateCharacter(this);
+				return;
+			}
 		}
-		else
-		{
-			fightingBuff.Add(buff);
-			buff.Initialize(ownerPlayer, game);
-		}
+
+		fightingBuff.Add(buff);
+		buff.Initialize(this, game);
+
 		game.GetCharacterUI(ownerPlayer).UpdateCharacter(this);
 	}
 
 	public void RemoveFightingBuff(BaseBuff buff)
 	{
+		var find = fightingBuff.Find(b => b.id == buff.id);
 		fightingBuff.Remove(buff);
+		buff.Release();
+		game.GetCharacterUI(ownerPlayer).UpdateCharacter(this);
+	}
+
+	public void AddCommonBuff(BaseBuff buff)
+	{
+		if (commonBuff.Exists(b => b.id == buff.id))
+		{
+			var find = commonBuff.Find(b => b.id == buff.id);
+			if (!find.OnDuplicateAdd())
+			{
+				game.GetCharacterUI(ownerPlayer).UpdateCharacter(this);
+				return;
+			}
+		}
+
+		commonBuff.Add(buff);
+		buff.Initialize(this, game);
+
+		game.GetCharacterUI(ownerPlayer).UpdateCharacter(this);
+	}
+
+	public void RemoveCommonBuff(BaseBuff buff)
+	{
+		var find = commonBuff.Find(b => b.id == buff.id);
+		commonBuff.Remove(buff);
 		buff.Release();
 		game.GetCharacterUI(ownerPlayer).UpdateCharacter(this);
 	}

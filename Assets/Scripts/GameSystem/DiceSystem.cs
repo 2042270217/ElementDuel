@@ -233,7 +233,6 @@ public class DiceSystem : IGameSystem
 		foreach (int i in indicesToRemove)
 			playerDices.RemoveAt(i);
 
-		//SortDiceList(playerDices, specialElements);
 		return true;
 	}
 

@@ -11,27 +11,28 @@ public class DuEZhenFu : BaseBuff
 	//可用次数：3
 
 
-	public override void Initialize(PlayerSystem ownerPlayer, ElementDuelGame game)
+	public override void Initialize(BaseCharacterCard owner, ElementDuelGame game)
 	{
-		m_ownerPlayer = ownerPlayer;
+		m_owner = owner;
 		m_game = game;
 		count = data.countMax;
-		m_ownerPlayer.AfterUseSkill.AddListener(HealCharacter);
+		m_owner.ownerPlayer.AfterUseSkill.AddListener(HealCharacter);
 	}
 
-	public override void OnDuplicateAdd()
+	public override bool OnDuplicateAdd()
 	{
 		count = data.countMax;
+		return false;
 	}
 
 	public override void Release()
 	{
-		m_ownerPlayer.AfterUseSkill.RemoveListener(HealCharacter);
+		m_owner.ownerPlayer.AfterUseSkill.RemoveListener(HealCharacter);
 	}
 
 	public override void TransferTo(BaseCharacterCard target)
 	{
-
+		m_owner = target;
 	}
 
 	void HealCharacter(BaseCharacterCard character)
@@ -42,7 +43,7 @@ public class DuEZhenFu : BaseBuff
 			character.GetHeal(2);
 			if (count == 0)
 			{
-				m_ownerPlayer.RemoveFightingBuff(this);
+				m_owner.RemoveFightingBuff(this);
 			}
 		}
 	}

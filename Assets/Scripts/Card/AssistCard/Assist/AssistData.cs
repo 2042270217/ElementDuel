@@ -3,8 +3,8 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "AssistData", menuName = "ElementDuel/AssistData")]
 public class AssistData : ScriptableObject
 {
-	public readonly Sprite sprite;
+	public Sprite sprite;
 	//可用次数
-	public readonly int countMax;
-	public readonly bool useCounter;
+	public int countMax;
+	public bool useCounter;
 }

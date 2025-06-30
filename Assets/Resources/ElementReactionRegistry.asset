@@ -9,9 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb59dcfe536c20c44a5e385b41f0e9f8, type: 3}
-  m_Name: BaBaLaSkill
+  m_Script: {fileID: 11500000, guid: ad87f4db6981b80499735349abed192a, type: 3}
+  m_Name: ElementReactionRegistry
   m_EditorClassIdentifier: 
-  skillData: {fileID: 11400000, guid: 23398b0696aa5cd48b8ce96710034c58, type: 2}
-  m_owner: {fileID: 0}
-  summon: {fileID: 11400000, guid: 0a5e56e247c76874ba1242678bae0ce7, type: 2}
+  frozenBuff: {fileID: 11400000, guid: c76aaca7160d62f46bdc22d076954d5b, type: 2}

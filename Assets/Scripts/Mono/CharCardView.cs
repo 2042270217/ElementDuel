@@ -10,6 +10,8 @@ using UnityEngine.UI;
 public class CharCardView : MonoBehaviour, IClickReceiver
 {
 	[HideInInspector] public CharGroupView charGroupView;
+	public Color deadColor;
+	public Color frozenColor;
 
 	GameObject m_main;
 	Image m_charImage;
@@ -108,7 +110,7 @@ public class CharCardView : MonoBehaviour, IClickReceiver
 		Initialize();
 
 		//设置角色卡面
-		UpdateCharSprite(character.charData.sprite);
+		UpdateCharSprite(character);
 
 		//设置角色充能
 		InitializeEnergy(character.charData.MaxEnergy);
@@ -126,6 +128,7 @@ public class CharCardView : MonoBehaviour, IClickReceiver
 
 	public void UpdateUI(BaseCharacterCard character)
 	{
+		UpdateCharSprite(character);
 		UpdateEnergy(character.attrib.currentEnergy);
 		UpdateHealthPoint(character.attrib.currentHp);
 		UpdateAttachedElement(character.attrib.attachedElement);
@@ -204,22 +207,25 @@ public class CharCardView : MonoBehaviour, IClickReceiver
 		}
 	}
 
-	public void UpdateCharSprite(Sprite image)
+	public void UpdateCharSprite(BaseCharacterCard c)
 	{
-		m_charImage.sprite = image;
+		m_charImage.sprite = c.charData.sprite;
+		if (c.attrib.currentHp <= 0)
+		{
+			m_charImage.color = deadColor;
+			return;
+		}
+		if (c.attrib.isFrozen)
+		{
+			m_charImage.color = frozenColor;
+			return;
+		}
+		m_charImage.color = Color.white;
+
 	}
 
 	public void UpdateHealthPoint(int point)
 	{
-		if (point <= 0)
-		{
-			m_charImage.color = Color.gray;
-
-		}
-		else
-		{
-			m_charImage.color = Color.white;
-		}
 		m_healthPoint.text = point.ToString();
 	}
 

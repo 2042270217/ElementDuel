@@ -104,7 +104,6 @@ namespace ElementDuel
 			if (Input.GetKeyDown(KeyCode.Alpha1))
 			{
 				CurrentPlayer.AddDice(ElementType.All);
-				m_diceUI.Update();
 			}
 			else if (Input.GetKeyDown(KeyCode.Alpha2))
 			{
@@ -473,6 +472,12 @@ namespace ElementDuel
 		public SummonUI GetSummonUI(PlayerSystem player)
 		{
 			return player == m_player1 ? m_p1SummonUI : m_p2SummonUI;
+		}
+
+		public void UpdateSummonUI()
+		{
+			m_p1SummonUI.Update();
+			m_p2SummonUI.Update();
 		}
 
 		#endregion

@@ -35,6 +35,10 @@ namespace ElementDuel.GamePhase
 			var oppsiteCards = game.DrawCrads(2);
 			game.CurrentPlayer.AddHands(currentCards);
 			game.OppsitePlayer.AddHands(oppsiteCards);
+
+			//更新UI
+			game.UpdateAssistUI();
+			game.UpdateSummonUI();
 		}
 
 		public override void GamePhaseUpdate()

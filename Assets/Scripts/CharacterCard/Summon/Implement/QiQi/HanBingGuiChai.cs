@@ -54,7 +54,14 @@ public class HanBingGuiChai : Summon
 		count--;
 		if (count == 0)
 		{
-			Release();
+			m_ownerPlayer.RemoveSummon(this);
 		}
+	}
+
+	public override bool OnDuplicateAdd()
+	{
+		count = data.countMax;
+		healCount = 1;
+		return false;
 	}
 }

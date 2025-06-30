@@ -6,7 +6,7 @@ public abstract class Assist : ScriptableObject
 	public AssistData data;
 
 	//剩余可用次数
-	public int count;
+	[HideInInspector]public int count;
 
 	protected PlayerSystem m_owner;
 	protected ElementDuelGame m_game;

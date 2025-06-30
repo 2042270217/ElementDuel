@@ -15,7 +15,8 @@ public class AssistCardView : MonoBehaviour
 		m_main = UnityTools.FindChildGameObject(gameObject, "Main");
 		m_icon = UITools.GetUIComponet<Image>(m_main, "icon");
 
-		m_counterBlock = UnityTools.FindChildGameObject(gameObject, "CounterBlock");
+		if (m_counterBlock == null)
+			m_counterBlock = UnityTools.FindChildGameObject(gameObject, "CounterBlock");
 		m_count = UITools.GetUIComponet<TMP_Text>(m_counterBlock, "count");
 	}
 

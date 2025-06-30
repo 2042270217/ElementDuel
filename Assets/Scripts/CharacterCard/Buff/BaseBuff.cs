@@ -10,7 +10,7 @@ public abstract class BaseBuff : ScriptableObject
 	[HideInInspector] public int count;
 	[HideInInspector] public virtual int id => IdRegistry.GetId(GetType());
 
-	protected PlayerSystem m_ownerPlayer;
+	protected BaseCharacterCard m_owner;
 	protected ElementDuelGame m_game;
 
 	/// <summary>
@@ -18,16 +18,16 @@ public abstract class BaseBuff : ScriptableObject
 	/// </summary>
 	/// <param name="ownerPlaer"></param>
 	/// <param name="game"></param>
-	public abstract void Initialize(PlayerSystem ownerPlaer, ElementDuelGame game);
+	public abstract void Initialize(BaseCharacterCard owner, ElementDuelGame game);
 	/// <summary>
 	/// 当Buff转移时的操作
 	/// </summary>
 	/// <param name="target"></param>
 	public abstract void TransferTo(BaseCharacterCard target);
 	/// <summary>
-	/// Buff重复添加时做的操作
+	/// Buff重复添加时做的操作，return true为新增，return false为更新原有的
 	/// </summary>
-	public abstract void OnDuplicateAdd();
+	public abstract bool OnDuplicateAdd();
 	/// <summary>
 	/// Buff移除时做的操作
 	/// </summary>

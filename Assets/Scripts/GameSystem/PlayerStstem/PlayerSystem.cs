@@ -100,6 +100,7 @@ public class PlayerSystem : IGameSystem
 			m_charField.chars.Add(c);
 			if (!m_specialElement.Contains(character.charData.elementType))
 				m_specialElement.Add(character.charData.elementType);
+			Debug.Log(string.Join(",", m_specialElement));
 		}
 	}
 
@@ -185,6 +186,7 @@ public class PlayerSystem : IGameSystem
 			assistList.Add(assist);
 			assist.Initialize(this, m_EDGame);
 		}
+		m_EDGame.GetAssistUI(this).Update();
 	}
 
 	public void AddDices(List<ElementType> dicesAdded)
@@ -202,6 +204,7 @@ public class PlayerSystem : IGameSystem
 			}
 		}
 		DiceSystem.SortDiceList(diceList, specialElement);
+		m_EDGame.UpdateDiceUI();
 	}
 
 	public void AddDice(ElementType ele)
@@ -211,6 +214,7 @@ public class PlayerSystem : IGameSystem
 			diceList.Add(ele);
 			DiceSystem.SortDiceList(diceList, specialElement);
 		}
+		m_EDGame.UpdateDiceUI();
 	}
 
 	public void AddHands(List<ActionCard> actionCards)
@@ -227,15 +231,27 @@ public class PlayerSystem : IGameSystem
 				handsList.Add(actionCards[i]);
 			}
 		}
+		m_EDGame.UpdateCurrentHandsUI();
 	}
 
 	public void RemoveHands(ActionCard actionCard)
 	{
 		handsList.Remove(actionCard);
+		m_EDGame.UpdateCurrentHandsUI();
 	}
 
 	public void AddSummon(Summon summon)
 	{
+		if (summonList.Exists(s => s.id == summon.id))
+		{
+			var find = summonList.Find(s => s.id == summon.id);
+			if (!find.OnDuplicateAdd())
+			{
+				m_EDGame.GetSummonUI(this).Update();
+				return;
+			}
+		}
+
 		if (summonList.Count == 4)
 		{
 			summonList[0].Release();
@@ -247,6 +263,13 @@ public class PlayerSystem : IGameSystem
 			summonList.Add(summon);
 			summon.Initialize(this, fightingCharecter, m_EDGame);
 		}
+
+		m_EDGame.GetSummonUI(this).Update();
+	}
+	public void RemoveSummon(Summon summon)
+	{
+		summonList.Remove(summon);
+		summon.Release();
 		m_EDGame.GetSummonUI(this).Update();
 	}
 

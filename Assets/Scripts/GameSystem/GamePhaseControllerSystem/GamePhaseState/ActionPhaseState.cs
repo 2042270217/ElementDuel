@@ -71,6 +71,11 @@ namespace ElementDuel.GamePhase
 		void OnCharacterDoubleClick(BaseCharacterCard character)
 		{
 			var game = m_controller.EDGame;
+			if (character.isDead)
+			{
+				game.UpdateInfoUI("目标角色已阵亡");
+				return;
+			}
 			var action = new SwitchCharacterAction(true, game, character);
 			game.HandleAction(action);
 		}
@@ -102,8 +107,15 @@ namespace ElementDuel.GamePhase
 
 		void OnSkillDoubleClick(Skill skill)
 		{
+
 			var game = m_controller.EDGame;
 			bool isBurst = false;
+
+			if (!game.CurrentPlayer.fightingCharecter.canAct)
+			{
+				game.UpdateInfoUI("角色无法行动");
+				return;
+			}
 
 			foreach (var cdt in skill.skillData.cdts)
 			{
