@@ -4,16 +4,22 @@ using UnityEngine.UI;
 
 public class CostDiceView : MonoBehaviour
 {
-	SkillCostCondition m_cdt;
+	[SerializeField] SkillCostCondition skillCdt;
+	public ElementColorData elementData;
+
+	public SkillCostCondition cdt => skillCdt;
 
 	Image m_image;
 	TMP_Text m_count;
-	ElementColorData m_color = GameSetup.Instance.AssetData.ElementColor;
 	// Start is called once before the first execution of Update after the MonoBehaviour is created
 	void Start()
 	{
-		m_image = UITools.GetUIComponet<Image>(gameObject, "Image");
-		m_count = UITools.GetUIComponet<TMP_Text>(gameObject, "count");
+	}
+
+	private void OnValidate()
+	{
+		Initialize();
+		Setup();
 	}
 
 	// Update is called once per frame
@@ -22,24 +28,40 @@ public class CostDiceView : MonoBehaviour
 
 	}
 
-	public void Setup(SkillCostCondition cdt)
+	void Initialize()
 	{
-		m_cdt = cdt;
-		switch (cdt.type)
+		if (m_image == null)
+			m_image = UITools.GetUIComponet<Image>(gameObject, "Image");
+
+		if (m_count == null)
+			m_count = UITools.GetUIComponet<TMP_Text>(gameObject, "count");
+	}
+
+	public void Initialize(SkillCostCondition cdt)
+	{
+		Initialize();
+		skillCdt = cdt;
+		Setup();
+	}
+
+	void Setup()
+	{
+		switch (skillCdt.type)
 		{
 			case ElementCostType.Any:
-				m_image.sprite = m_color.AnyCostIcon;
+				m_image.sprite = elementData.AnyCostIcon;
 				break;
 			case ElementCostType.Same:
-				m_image.sprite = m_color.SameCostIcon;
+				m_image.sprite = elementData.SameCostIcon;
 				break;
 			case ElementCostType.Specific:
-				m_image.sprite = SwitchElementIcon(cdt.element);
+				m_image.sprite = SwitchElementIcon(skillCdt.element);
 				break;
 			case ElementCostType.Energy:
+				m_image.sprite = elementData.EnergyCostIcon;
 				break;
 		}
-		m_count.text = cdt.count.ToString();
+		m_count.text = skillCdt.count.ToString();
 	}
 
 	Sprite SwitchElementIcon(ElementType type)
@@ -47,19 +69,19 @@ public class CostDiceView : MonoBehaviour
 		switch (type)
 		{
 			case ElementType.Fire:
-				return m_color.FireIcon;
+				return elementData.FireIcon;
 			case ElementType.Water:
-				return m_color.WaterIcon;
+				return elementData.WaterIcon;
 			case ElementType.Wind:
-				return m_color.WindIcon;
+				return elementData.WindIcon;
 			case ElementType.Thunder:
-				return m_color.ThunderIcon;
+				return elementData.ThunderIcon;
 			case ElementType.Grass:
-				return m_color.GrassIcon;
+				return elementData.GrassIcon;
 			case ElementType.Ice:
-				return m_color.IceIcon;
+				return elementData.IceIcon;
 			case ElementType.Rock:
-				return m_color.RockIcon;
+				return elementData.RockIcon;
 			default:
 				return null;
 		}

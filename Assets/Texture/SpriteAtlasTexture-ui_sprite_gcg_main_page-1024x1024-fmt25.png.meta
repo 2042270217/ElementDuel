@@ -344,12 +344,12 @@ TextureImporter:
       name: SpriteAtlasTexture-ui_sprite_gcg_main_page-1024x1024-fmt25_7
       rect:
         serializedVersion: 2
-        x: 238
-        y: 703
+        x: 237
+        y: 714
         width: 108
-        height: 119
+        height: 108
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -850,7 +850,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 25fc2775f335f714dae1478c32e7a437
     internalID: 0
     vertices: []
     indices: 

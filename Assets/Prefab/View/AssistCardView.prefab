@@ -117,7 +117,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 456038999025235008, guid: 68d883c9296ffe649bba465cd372d090, type: 3}
+  m_Sprite: {fileID: 456038999025235008, guid: 1251524911a704b52a5af078b3085370, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -192,7 +192,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -8747250073334024539, guid: 8632856c365e36d49880147d46c996af, type: 3}
+  m_Sprite: {fileID: -8747250073334024539, guid: 33f8a6eca262e47bda0c3190a782335a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -211,6 +211,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8834797881863101724}
+  - component: {fileID: 8969187754391257096}
   m_Layer: 5
   m_Name: AssistCardView
   m_TagString: Untagged
@@ -239,6 +240,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 63, y: 72}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &8969187754391257096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4393839928977758107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ece481e568857448a581c24aff23a9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6173817463477004956
 GameObject:
   m_ObjectHideFlags: 0

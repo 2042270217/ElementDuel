@@ -39,9 +39,10 @@ namespace ElementDuel
 			List<ElementType> removeElements = new List<ElementType>();
 			foreach (Transform child in m_diceGroup.transform)
 			{
-				if (child.GetComponent<DiceView>().isSelected)
+				DiceView diceView = child.GetComponent<DiceView>();
+				if (diceView.isSelected)
 				{
-					ElementType e = UnityTools.FindChildGameObject(child.gameObject, "Image").GetComponent<ElementDiceSetup>().elementType;
+					ElementType e = diceView.elementType;
 					removeElements.Add(e);
 				}
 			}
@@ -65,7 +66,7 @@ namespace ElementDuel
 					ThrowingPhaseState.m_isCurrentPlayerFinished = true;
 					m_EDGame.CurrentPlayer.SetDices(m_diceList);
 					Hide();
-					m_EDGame.UpdateInfoUI(m_EDGame.OppsitePlayer.m_name + "投掷阶段");
+					m_EDGame.UpdateInfoUI(m_EDGame.OppsitePlayer.name + "投掷阶段");
 					var diceList = m_EDGame.ThrowDice(false);
 					ShowInfo(diceList);
 				}
@@ -116,11 +117,11 @@ namespace ElementDuel
 		public void ShowInfo(List<ElementType> dices)
 		{
 			Clear();
+			Show();
 
 			m_diceList = dices;
 			GenerateChildDice();
 
-			Show();
 		}
 
 		void GenerateChildDice(bool canBeClicked = true)
@@ -130,10 +131,8 @@ namespace ElementDuel
 
 				var item = GameObject.Instantiate(m_dicePrefab, m_diceGroup.transform);
 				item.transform.localScale = Vector3.one * 3;
-				item.GetComponent<DiceView>().CanBeClicked = canBeClicked;
-				//根据元素设置骰子样式
-				var go = UnityTools.FindChildGameObject(item, "Image");
-				go.GetComponent<ElementDiceSetup>().elementType = dice;
+				DiceView diceView = item.GetComponent<DiceView>();
+				diceView.Initialize(canBeClicked, dice);
 			}
 		}
 

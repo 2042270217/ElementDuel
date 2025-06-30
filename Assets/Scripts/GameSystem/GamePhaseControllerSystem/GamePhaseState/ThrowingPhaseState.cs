@@ -27,7 +27,14 @@ namespace ElementDuel.GamePhase
 		public override void GamePhaseStart()
 		{
 			base.GamePhaseStart();
-			m_controller.EDGame.UpdateInfoUI(m_controller.EDGame.CurrentPlayer.m_name + "投掷阶段");
+			var game = m_controller.EDGame;
+			game.SetBattleUIActive(false);
+			game.SetCurrentHandsUIActive(false);
+			game.SetDiceUIActive(false);
+			game.SetDeckActive(false);
+
+
+			game.UpdateInfoUI(m_controller.EDGame.CurrentPlayer.name + "投掷阶段");
 
 			var diceList = m_controller.EDGame.ThrowDice(true);
 			m_controller.EDGame.UpdateThrowUI(diceList);

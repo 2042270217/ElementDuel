@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9d5fed17d2641c47b4a80588e54c878, type: 3}
+  m_Name: BaBaLaSkillData
+  m_EditorClassIdentifier: 
+  icon: {fileID: -5909600589191783325, guid: 670c60d8d5fc15d4cb0161f6c74987ef, type: 3}
+  cdts:
+  - type: 2
+    count: 3
+    element: 2
+  description: "\u9020\u62101\u70B9\u6C34\u5143\u7D20\u4F24\u5BB3\uFF0C\u53EC\u5524\u6B4C\u58F0\u4E4B\u73AF\n\u7ED3\u675F\u9636\u6BB5\uFF1A\u6CBB\u7597\u6240\u6709\u6211\u65B9\u89D2\u82721\u70B9\uFF0C\u7136\u540E\u5BF9\u6211\u65B9\u51FA\u6218\u89D2\u8272\u9644\u7740\u6C34\u5143\u7D20\u3002\r\n\u53EF\u7528\u6B21\u6570\uFF1A2"

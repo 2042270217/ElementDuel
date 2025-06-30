@@ -22,6 +22,12 @@ public enum ElementCostType
 	Energy		//½ÇÉ«³äÄÜ
 }
 
+public enum EffectType
+{
+	Damage,
+	Heal
+}
+
 [System.Serializable]
 public class SkillCostCondition
 {

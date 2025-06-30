@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Gcg_CardBack_Fontaine_0: 1463081543585637090
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

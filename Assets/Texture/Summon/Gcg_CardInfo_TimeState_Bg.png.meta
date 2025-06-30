@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Gcg_CardInfo_TimeState_Bg_0: 6891150639053772662
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

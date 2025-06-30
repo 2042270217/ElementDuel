@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f08915dc0cefc714e8f19e10dc94546f, type: 3}
+  m_Name: BaBaLaBurst
+  m_EditorClassIdentifier: 
+  skillData: {fileID: 11400000, guid: fab05b2c47451fa48a2fb56b0772cf4a, type: 2}
+  owner: {fileID: 11400000, guid: 3023608dd32d37f44b90fb5b539e2f8d, type: 2}

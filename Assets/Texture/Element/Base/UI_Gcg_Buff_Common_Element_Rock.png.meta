@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      UI_Gcg_Buff_Common_Element_Rock_0: 9138587174474639780
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

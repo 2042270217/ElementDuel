@@ -9,6 +9,9 @@ namespace ElementDuel
 {
 	public class InputSystem : IGameSystem
 	{
+
+		IHoverReceiver currentHover;
+
 		public InputSystem(ElementDuelGame edGame) : base(edGame)
 		{
 			Initialize();
@@ -27,34 +30,70 @@ namespace ElementDuel
 
 		public override void Update()
 		{
-			if (Input.GetMouseButtonDown(0))
-			{
-				HandleClick();
-			}
-		}
-
-		void HandleClick()
-		{
 			var eventData = new PointerEventData(EventSystem.current);
 			eventData.position = Input.mousePosition;
 
 			var results = new List<RaycastResult>();
 			EventSystem.current.RaycastAll(eventData, results);
 
+			IHoverReceiver hover = null;
+			IClickReceiver click = null;
+
 			foreach (var result in results)
 			{
-				var receiver = result.gameObject.GetComponent<IClickReceiver>();
-				if (receiver == null)
+				if (hover == null)
 				{
-					receiver = result.gameObject.GetComponentInParent<IClickReceiver>(true);
+					hover = GetComponent<IHoverReceiver>(result);
 				}
-
-				if (receiver != null)
+				if (click == null)
 				{
-					receiver.OnClick();
+					click = GetComponent<IClickReceiver>(result);
 				}
 			}
+
+			if (hover == null)
+			{
+				currentHover?.OnHoverExit();
+				currentHover = null;
+			}
+			else
+			{
+				if (hover != currentHover)
+				{
+					currentHover?.OnHoverExit();
+					hover?.OnHoverEnter();
+					currentHover = hover;
+				}
+			}
+
+			if (Input.GetMouseButtonDown(0))
+			{
+				if (click == null)
+				{
+					//未点击到主体，即将场景选择状态清空
+					m_EDGame.ClearSelection();
+				}
+				else
+				{
+					click.OnClick();
+				}
+
+			}
+
+
+
 		}
+
+		public static T GetComponent<T>(RaycastResult result)
+		{
+			var receiver = result.gameObject.GetComponent<T>();
+			if (receiver == null)
+			{
+				receiver = result.gameObject.GetComponentInParent<T>(true);
+			}
+			return receiver;
+		}
+
 
 	}
 }

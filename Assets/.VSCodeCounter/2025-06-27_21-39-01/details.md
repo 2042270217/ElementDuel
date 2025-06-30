@@ -1,0 +1,151 @@
+# Details
+
+Date : 2025-06-27 21:39:01
+
+Directory e:\\GAME\\ElementDuel\\Assets
+
+Total : 136 files,  7753 codes, 302 comments, 1966 blanks, all 10021 lines
+
+[Summary](results.md) / Details / [Diff Summary](diff.md) / [Diff Details](diff-details.md)
+
+## Files
+| filename | language | code | comment | blank | total |
+| :--- | :--- | ---: | ---: | ---: | ---: |
+| [Scripts/CardSystem/ActionCard/Action.cs](/Scripts/CardSystem/ActionCard/Action.cs) | C# | 88 | 6 | 45 | 139 |
+| [Scripts/CardSystem/CharacterCard/BufferEffect.cs](/Scripts/CardSystem/CharacterCard/BufferEffect.cs) | C# | 34 | 8 | 13 | 55 |
+| [Scripts/CardSystem/CharacterCard/Character.cs](/Scripts/CardSystem/CharacterCard/Character.cs) | C# | 117 | 0 | 45 | 162 |
+| [Scripts/CardSystem/CharacterCard/CharacterAbility.cs](/Scripts/CardSystem/CharacterCard/CharacterAbility.cs) | C# | 138 | 2 | 48 | 188 |
+| [Scripts/CardSystem/CharacterCard/CharacterBuff.cs](/Scripts/CardSystem/CharacterCard/CharacterBuff.cs) | C# | 87 | 1 | 28 | 116 |
+| [Scripts/CardSystem/CharacterCard/Specific/Furina/Burst.cs](/Scripts/CardSystem/CharacterCard/Specific/Furina/Burst.cs) | C# | 19 | 4 | 5 | 28 |
+| [Scripts/CardSystem/CharacterCard/Specific/Furina/BurstBuff.cs](/Scripts/CardSystem/CharacterCard/Specific/Furina/BurstBuff.cs) | C# | 27 | 0 | 5 | 32 |
+| [Scripts/CardSystem/CharacterCard/Specific/Furina/BurstEffect.cs](/Scripts/CardSystem/CharacterCard/Specific/Furina/BurstEffect.cs) | C# | 15 | 0 | 2 | 17 |
+| [Scripts/CardSystem/CharacterCard/Specific/Furina/NormalAttack.cs](/Scripts/CardSystem/CharacterCard/Specific/Furina/NormalAttack.cs) | C# | 19 | 2 | 3 | 24 |
+| [Scripts/CardSystem/CharacterCard/Specific/Furina/Skill.cs](/Scripts/CardSystem/CharacterCard/Specific/Furina/Skill.cs) | C# | 11 | 0 | 1 | 12 |
+| [Scripts/CardSystem/CharacterCard/Specific/Furina/Summon.cs](/Scripts/CardSystem/CharacterCard/Specific/Furina/Summon.cs) | C# | 36 | 4 | 10 | 50 |
+| [Scripts/CardSystem/CharacterCard/Specific/NormalAttack.cs](/Scripts/CardSystem/CharacterCard/Specific/NormalAttack.cs) | C# | 9 | 0 | 1 | 10 |
+| [Scripts/CardSystem/CharacterCard/Summon.cs](/Scripts/CardSystem/CharacterCard/Summon.cs) | C# | 92 | 0 | 37 | 129 |
+| [Scripts/Card/ActionCard.cs](/Scripts/Card/ActionCard.cs) | C# | 6 | 0 | 2 | 8 |
+| [Scripts/Card/AssistCard/Assist/Assist.cs](/Scripts/Card/AssistCard/Assist/Assist.cs) | C# | 7 | 6 | 4 | 17 |
+| [Scripts/Card/AssistCard/Assist/AssistData.cs](/Scripts/Card/AssistCard/Assist/AssistData.cs) | C# | 7 | 0 | 2 | 9 |
+| [Scripts/Card/AssistCard/Assist/Site/HuanNaLanNaAssist.cs](/Scripts/Card/AssistCard/Assist/Site/HuanNaLanNaAssist.cs) | C# | 13 | 2 | 7 | 22 |
+| [Scripts/Card/AssistCard/Partner/DiMaWuSi.cs](/Scripts/Card/AssistCard/Partner/DiMaWuSi.cs) | C# | 8 | 0 | 2 | 10 |
+| [Scripts/Card/AssistCard/Partner/DiNaZeDai.cs](/Scripts/Card/AssistCard/Partner/DiNaZeDai.cs) | C# | 9 | 0 | 2 | 11 |
+| [Scripts/Card/AssistCard/Partner/MaoShiFu.cs](/Scripts/Card/AssistCard/Partner/MaoShiFu.cs) | C# | 8 | 0 | 2 | 10 |
+| [Scripts/Card/AssistCard/Site/HuanNaLanNa.cs](/Scripts/Card/AssistCard/Site/HuanNaLanNa.cs) | C# | 8 | 2 | 6 | 16 |
+| [Scripts/Card/CardData/ActionCardData.cs](/Scripts/Card/CardData/ActionCardData.cs) | C# | 30 | 0 | 5 | 35 |
+| [Scripts/Card/EquipmentCard/Relic/LaoBingRongYan.cs](/Scripts/Card/EquipmentCard/Relic/LaoBingRongYan.cs) | C# | 9 | 0 | 2 | 11 |
+| [Scripts/Card/EquipmentCard/Relic/QianYanLaoGu.cs](/Scripts/Card/EquipmentCard/Relic/QianYanLaoGu.cs) | C# | 9 | 0 | 2 | 11 |
+| [Scripts/Card/EquipmentCard/Relic/ShaoNv.cs](/Scripts/Card/EquipmentCard/Relic/ShaoNv.cs) | C# | 9 | 0 | 2 | 11 |
+| [Scripts/Card/EquipmentCard/Relic/XunYingLieRen.cs](/Scripts/Card/EquipmentCard/Relic/XunYingLieRen.cs) | C# | 9 | 0 | 2 | 11 |
+| [Scripts/Card/EquipmentCard/Weapon/FengYingJian.cs](/Scripts/Card/EquipmentCard/Weapon/FengYingJian.cs) | C# | 9 | 0 | 2 | 11 |
+| [Scripts/Card/EventCard/Food/JianDan.cs](/Scripts/Card/EventCard/Food/JianDan.cs) | C# | 9 | 0 | 2 | 11 |
+| [Scripts/Card/EventCard/Food/QiGuiZhiGuang.cs](/Scripts/Card/EventCard/Food/QiGuiZhiGuang.cs) | C# | 9 | 0 | 2 | 11 |
+| [Scripts/Card/EventCard/Food/WenQuanShiGuang.cs](/Scripts/Card/EventCard/Food/WenQuanShiGuang.cs) | C# | 9 | 0 | 2 | 11 |
+| [Scripts/Card/EventCard/Other/HaiZhongXunBao.cs](/Scripts/Card/EventCard/Other/HaiZhongXunBao.cs) | C# | 9 | 0 | 2 | 11 |
+| [Scripts/CharacterCard/Card/BaseCharacterCard.cs](/Scripts/CharacterCard/Card/BaseCharacterCard.cs) | C# | 62 | 0 | 15 | 77 |
+| [Scripts/CharacterCard/Card/CharacterCardData.cs](/Scripts/CharacterCard/Card/CharacterCardData.cs) | C# | 21 | 0 | 4 | 25 |
+| [Scripts/CharacterCard/Card/Implement/BaBaLa.cs](/Scripts/CharacterCard/Card/Implement/BaBaLa.cs) | C# | 25 | 1 | 11 | 37 |
+| [Scripts/CharacterCard/Card/Implement/FuNingNa.cs](/Scripts/CharacterCard/Card/Implement/FuNingNa.cs) | C# | 25 | 1 | 11 | 37 |
+| [Scripts/CharacterCard/Card/Implement/QiQi.cs](/Scripts/CharacterCard/Card/Implement/QiQi.cs) | C# | 25 | 1 | 11 | 37 |
+| [Scripts/CharacterCard/Skill/BaBaLa/BaBaLaBurst.cs](/Scripts/CharacterCard/Skill/BaBaLa/BaBaLaBurst.cs) | C# | 9 | 0 | 2 | 11 |
+| [Scripts/CharacterCard/Skill/BaBaLa/BaBaLaNormalAttack.cs](/Scripts/CharacterCard/Skill/BaBaLa/BaBaLaNormalAttack.cs) | C# | 9 | 0 | 2 | 11 |
+| [Scripts/CharacterCard/Skill/BaBaLa/BaBaLaSkill.cs](/Scripts/CharacterCard/Skill/BaBaLa/BaBaLaSkill.cs) | C# | 9 | 0 | 2 | 11 |
+| [Scripts/CharacterCard/Skill/BaseSkill.cs](/Scripts/CharacterCard/Skill/BaseSkill.cs) | C# | 5 | 0 | 2 | 7 |
+| [Scripts/CharacterCard/Skill/FuNingNa/FuNingNaBurst.cs](/Scripts/CharacterCard/Skill/FuNingNa/FuNingNaBurst.cs) | C# | 9 | 0 | 2 | 11 |
+| [Scripts/CharacterCard/Skill/FuNingNa/FuNingNaNormalAttack.cs](/Scripts/CharacterCard/Skill/FuNingNa/FuNingNaNormalAttack.cs) | C# | 9 | 0 | 2 | 11 |
+| [Scripts/CharacterCard/Skill/FuNingNa/FuNingNaSkill.cs](/Scripts/CharacterCard/Skill/FuNingNa/FuNingNaSkill.cs) | C# | 9 | 0 | 2 | 11 |
+| [Scripts/CharacterCard/Skill/QiQi/QiQiBurst.cs](/Scripts/CharacterCard/Skill/QiQi/QiQiBurst.cs) | C# | 9 | 0 | 2 | 11 |
+| [Scripts/CharacterCard/Skill/QiQi/QiQiNormalAttack.cs](/Scripts/CharacterCard/Skill/QiQi/QiQiNormalAttack.cs) | C# | 9 | 0 | 2 | 11 |
+| [Scripts/CharacterCard/Skill/QiQi/QiQiSkill.cs](/Scripts/CharacterCard/Skill/QiQi/QiQiSkill.cs) | C# | 9 | 0 | 2 | 11 |
+| [Scripts/CharacterCard/Skill/Skill.cs](/Scripts/CharacterCard/Skill/Skill.cs) | C# | 6 | 0 | 3 | 9 |
+| [Scripts/CharacterCard/Skill/SkillCostData.cs](/Scripts/CharacterCard/Skill/SkillCostData.cs) | C# | 25 | 2 | 3 | 30 |
+| [Scripts/CharacterCard/Skill/SkillData.cs](/Scripts/CharacterCard/Skill/SkillData.cs) | C# | 10 | 0 | 2 | 12 |
+| [Scripts/DeckConfig.cs](/Scripts/DeckConfig.cs) | C# | 10 | 0 | 3 | 13 |
+| [Scripts/EffectAssetData.cs](/Scripts/EffectAssetData.cs) | C# | 6 | 0 | 2 | 8 |
+| [Scripts/ElementDuelGame.cs](/Scripts/ElementDuelGame.cs) | C# | 281 | 9 | 80 | 370 |
+| [Scripts/Element/ElementColorData.cs](/Scripts/Element/ElementColorData.cs) | C# | 40 | 0 | 2 | 42 |
+| [Scripts/Element/ElementDesign.cs](/Scripts/Element/ElementDesign.cs) | C# | 55 | 3 | 12 | 70 |
+| [Scripts/GameAssetData.cs](/Scripts/GameAssetData.cs) | C# | 9 | 0 | 2 | 11 |
+| [Scripts/GameLoop.cs](/Scripts/GameLoop.cs) | C# | 24 | 2 | 3 | 29 |
+| [Scripts/GameSystem/ActionSystem/ActionSystem.cs](/Scripts/GameSystem/ActionSystem/ActionSystem.cs) | C# | 27 | 0 | 9 | 36 |
+| [Scripts/GameSystem/ActionSystem/PlayerAction/PlayerAction.cs](/Scripts/GameSystem/ActionSystem/PlayerAction/PlayerAction.cs) | C# | 60 | 0 | 11 | 71 |
+| [Scripts/GameSystem/DeckSystem.cs](/Scripts/GameSystem/DeckSystem.cs) | C# | 66 | 22 | 20 | 108 |
+| [Scripts/GameSystem/DiceSystem.cs](/Scripts/GameSystem/DiceSystem.cs) | C# | 281 | 15 | 66 | 362 |
+| [Scripts/GameSystem/GamePhaseControllerSystem/GamePhaseControllerSystem.cs](/Scripts/GameSystem/GamePhaseControllerSystem/GamePhaseControllerSystem.cs) | C# | 59 | 0 | 12 | 71 |
+| [Scripts/GameSystem/GamePhaseControllerSystem/GamePhaseState/ActionPhaseState.cs](/Scripts/GameSystem/GamePhaseControllerSystem/GamePhaseState/ActionPhaseState.cs) | C# | 77 | 0 | 13 | 90 |
+| [Scripts/GameSystem/GamePhaseControllerSystem/GamePhaseState/EndPhaseState.cs](/Scripts/GameSystem/GamePhaseControllerSystem/GamePhaseState/EndPhaseState.cs) | C# | 44 | 0 | 7 | 51 |
+| [Scripts/GameSystem/GamePhaseControllerSystem/GamePhaseState/GameEndState.cs](/Scripts/GameSystem/GamePhaseControllerSystem/GamePhaseState/GameEndState.cs) | C# | 28 | 0 | 5 | 33 |
+| [Scripts/GameSystem/GamePhaseControllerSystem/GamePhaseState/GamePhaseEnum.cs](/Scripts/GameSystem/GamePhaseControllerSystem/GamePhaseState/GamePhaseEnum.cs) | C# | 16 | 0 | 2 | 18 |
+| [Scripts/GameSystem/GamePhaseControllerSystem/GamePhaseState/GamePhaseState.cs](/Scripts/GameSystem/GamePhaseControllerSystem/GamePhaseState/GamePhaseState.cs) | C# | 37 | 0 | 5 | 42 |
+| [Scripts/GameSystem/GamePhaseControllerSystem/GamePhaseState/GameStartState.cs](/Scripts/GameSystem/GamePhaseControllerSystem/GamePhaseState/GameStartState.cs) | C# | 190 | 0 | 33 | 223 |
+| [Scripts/GameSystem/GamePhaseControllerSystem/GamePhaseState/ThrowingPhaseState.cs](/Scripts/GameSystem/GamePhaseControllerSystem/GamePhaseState/ThrowingPhaseState.cs) | C# | 40 | 0 | 11 | 51 |
+| [Scripts/GameSystem/IGameSystem.cs](/Scripts/GameSystem/IGameSystem.cs) | C# | 19 | 0 | 5 | 24 |
+| [Scripts/GameSystem/InputSystem/IClickReceiver.cs](/Scripts/GameSystem/InputSystem/IClickReceiver.cs) | C# | 7 | 0 | 0 | 7 |
+| [Scripts/GameSystem/InputSystem/IHoverReceiver.cs](/Scripts/GameSystem/InputSystem/IHoverReceiver.cs) | C# | 8 | 0 | 0 | 8 |
+| [Scripts/GameSystem/InputSystem/InputSystem.cs](/Scripts/GameSystem/InputSystem/InputSystem.cs) | C# | 75 | 1 | 24 | 100 |
+| [Scripts/GameSystem/PlayerStstem/PlayerField/AssitField.cs](/Scripts/GameSystem/PlayerStstem/PlayerField/AssitField.cs) | C# | 15 | 0 | 8 | 23 |
+| [Scripts/GameSystem/PlayerStstem/PlayerField/CharacterField.cs](/Scripts/GameSystem/PlayerStstem/PlayerField/CharacterField.cs) | C# | 26 | 0 | 13 | 39 |
+| [Scripts/GameSystem/PlayerStstem/PlayerField/DiceField.cs](/Scripts/GameSystem/PlayerStstem/PlayerField/DiceField.cs) | C# | 19 | 0 | 8 | 27 |
+| [Scripts/GameSystem/PlayerStstem/PlayerField/HandsField.cs](/Scripts/GameSystem/PlayerStstem/PlayerField/HandsField.cs) | C# | 19 | 0 | 7 | 26 |
+| [Scripts/GameSystem/PlayerStstem/PlayerField/IPlayerField.cs](/Scripts/GameSystem/PlayerStstem/PlayerField/IPlayerField.cs) | C# | 11 | 0 | 5 | 16 |
+| [Scripts/GameSystem/PlayerStstem/PlayerField/SummonField.cs](/Scripts/GameSystem/PlayerStstem/PlayerField/SummonField.cs) | C# | 15 | 0 | 8 | 23 |
+| [Scripts/GameSystem/PlayerStstem/PlayerSystem.cs](/Scripts/GameSystem/PlayerStstem/PlayerSystem.cs) | C# | 107 | 6 | 23 | 136 |
+| [Scripts/Log/EDebug.cs](/Scripts/Log/EDebug.cs) | C# | 39 | 6 | 8 | 53 |
+| [Scripts/Log/LogLevel.cs](/Scripts/Log/LogLevel.cs) | C# | 11 | 0 | 2 | 13 |
+| [Scripts/Mono/AssistCardView.cs](/Scripts/Mono/AssistCardView.cs) | C# | 31 | 9 | 14 | 54 |
+| [Scripts/Mono/AssistGroupView.cs](/Scripts/Mono/AssistGroupView.cs) | C# | 3 | 0 | 3 | 6 |
+| [Scripts/Mono/BuffView.cs](/Scripts/Mono/BuffView.cs) | C# | 29 | 6 | 7 | 42 |
+| [Scripts/Mono/CharCardView.cs](/Scripts/Mono/CharCardView.cs) | C# | 177 | 21 | 57 | 255 |
+| [Scripts/Mono/CharGroupView.cs](/Scripts/Mono/CharGroupView.cs) | C# | 85 | 0 | 16 | 101 |
+| [Scripts/Mono/CostDiceView.cs](/Scripts/Mono/CostDiceView.cs) | C# | 76 | 2 | 12 | 90 |
+| [Scripts/Mono/DiceGroupView.cs](/Scripts/Mono/DiceGroupView.cs) | C# | 33 | 0 | 6 | 39 |
+| [Scripts/Mono/DiceView.cs](/Scripts/Mono/DiceView.cs) | C# | 91 | 4 | 16 | 111 |
+| [Scripts/Mono/EffectView.cs](/Scripts/Mono/EffectView.cs) | C# | 88 | 2 | 12 | 102 |
+| [Scripts/Mono/ElementDiceSetup.cs](/Scripts/Mono/ElementDiceSetup.cs) | C# | 44 | 2 | 4 | 50 |
+| [Scripts/Mono/ElementIconSetup.cs](/Scripts/Mono/ElementIconSetup.cs) | C# | 78 | 2 | 7 | 87 |
+| [Scripts/Mono/ElementView.cs](/Scripts/Mono/ElementView.cs) | C# | 55 | 2 | 8 | 65 |
+| [Scripts/Mono/EnergyView.cs](/Scripts/Mono/EnergyView.cs) | C# | 40 | 2 | 11 | 53 |
+| [Scripts/Mono/GameSetup.cs](/Scripts/Mono/GameSetup.cs) | C# | 17 | 0 | 2 | 19 |
+| [Scripts/Mono/HandsGroupView.cs](/Scripts/Mono/HandsGroupView.cs) | C# | 90 | 2 | 23 | 115 |
+| [Scripts/Mono/HandsView.cs](/Scripts/Mono/HandsView.cs) | C# | 112 | 5 | 28 | 145 |
+| [Scripts/Mono/PlayerGroupView.cs](/Scripts/Mono/PlayerGroupView.cs) | C# | 35 | 0 | 13 | 48 |
+| [Scripts/Mono/SkillGroupView.cs](/Scripts/Mono/SkillGroupView.cs) | C# | 35 | 0 | 8 | 43 |
+| [Scripts/Mono/SkillView.cs](/Scripts/Mono/SkillView.cs) | C# | 55 | 2 | 15 | 72 |
+| [Scripts/Mono/SummonCardView.cs](/Scripts/Mono/SummonCardView.cs) | C# | 35 | 5 | 12 | 52 |
+| [Scripts/Test/GenGO.cs](/Scripts/Test/GenGO.cs) | C# | 20 | 2 | 3 | 25 |
+| [Scripts/Test/TestMono.cs](/Scripts/Test/TestMono.cs) | C# | 25 | 2 | 5 | 32 |
+| [Scripts/Tools/UITools.cs](/Scripts/Tools/UITools.cs) | C# | 36 | 0 | 5 | 41 |
+| [Scripts/Tools/UnityTools.cs](/Scripts/Tools/UnityTools.cs) | C# | 56 | 0 | 7 | 63 |
+| [Scripts/UISystem/AssistUI.cs](/Scripts/UISystem/AssistUI.cs) | C# | 28 | 0 | 9 | 37 |
+| [Scripts/UISystem/BattleUI.cs](/Scripts/UISystem/BattleUI.cs) | C# | 35 | 0 | 12 | 47 |
+| [Scripts/UISystem/CharacterUI.cs](/Scripts/UISystem/CharacterUI.cs) | C# | 52 | 0 | 15 | 67 |
+| [Scripts/UISystem/CurrentHandsUI.cs](/Scripts/UISystem/CurrentHandsUI.cs) | C# | 28 | 3 | 9 | 40 |
+| [Scripts/UISystem/DiceUI.cs](/Scripts/UISystem/DiceUI.cs) | C# | 35 | 3 | 9 | 47 |
+| [Scripts/UISystem/IUserInterface.cs](/Scripts/UISystem/IUserInterface.cs) | C# | 31 | 0 | 11 | 42 |
+| [Scripts/UISystem/InfoUI.cs](/Scripts/UISystem/InfoUI.cs) | C# | 46 | 0 | 13 | 59 |
+| [Scripts/UISystem/SkillUI.cs](/Scripts/UISystem/SkillUI.cs) | C# | 25 | 3 | 8 | 36 |
+| [Scripts/UISystem/StartUI.cs](/Scripts/UISystem/StartUI.cs) | C# | 87 | 0 | 19 | 106 |
+| [Scripts/UISystem/ThrowUI.cs](/Scripts/UISystem/ThrowUI.cs) | C# | 114 | 6 | 21 | 141 |
+| [Scripts/UISystem/UIPool.cs](/Scripts/UISystem/UIPool.cs) | C# | 36 | 0 | 6 | 42 |
+| [TextMesh Pro/Shaders/SDFFunctions.hlsl](/TextMesh%20Pro/Shaders/SDFFunctions.hlsl) | HLSL | 130 | 18 | 31 | 179 |
+| [TextMesh Pro/Shaders/TMP\_Bitmap-Custom-Atlas.shader](/TextMesh%20Pro/Shaders/TMP_Bitmap-Custom-Atlas.shader) | ShaderLab | 113 | 2 | 31 | 146 |
+| [TextMesh Pro/Shaders/TMP\_Bitmap-Mobile.shader](/TextMesh%20Pro/Shaders/TMP_Bitmap-Mobile.shader) | ShaderLab | 123 | 3 | 30 | 156 |
+| [TextMesh Pro/Shaders/TMP\_Bitmap.shader](/TextMesh%20Pro/Shaders/TMP_Bitmap.shader) | ShaderLab | 113 | 2 | 31 | 146 |
+| [TextMesh Pro/Shaders/TMP\_SDF Overlay.shader](/TextMesh%20Pro/Shaders/TMP_SDF%20Overlay.shader) | ShaderLab | 253 | 4 | 70 | 327 |
+| [TextMesh Pro/Shaders/TMP\_SDF SSD.shader](/TextMesh%20Pro/Shaders/TMP_SDF%20SSD.shader) | ShaderLab | 253 | 4 | 65 | 322 |
+| [TextMesh Pro/Shaders/TMP\_SDF-Mobile Masking.shader](/TextMesh%20Pro/Shaders/TMP_SDF-Mobile%20Masking.shader) | ShaderLab | 198 | 10 | 51 | 259 |
+| [TextMesh Pro/Shaders/TMP\_SDF-Mobile Overlay.shader](/TextMesh%20Pro/Shaders/TMP_SDF-Mobile%20Overlay.shader) | ShaderLab | 193 | 8 | 52 | 253 |
+| [TextMesh Pro/Shaders/TMP\_SDF-Mobile SSD.shader](/TextMesh%20Pro/Shaders/TMP_SDF-Mobile%20SSD.shader) | ShaderLab | 82 | 4 | 21 | 107 |
+| [TextMesh Pro/Shaders/TMP\_SDF-Mobile-2-Pass.shader](/TextMesh%20Pro/Shaders/TMP_SDF-Mobile-2-Pass.shader) | ShaderLab | 290 | 15 | 85 | 390 |
+| [TextMesh Pro/Shaders/TMP\_SDF-Mobile.shader](/TextMesh%20Pro/Shaders/TMP_SDF-Mobile.shader) | ShaderLab | 192 | 8 | 51 | 251 |
+| [TextMesh Pro/Shaders/TMP\_SDF-Surface-Mobile.shader](/TextMesh%20Pro/Shaders/TMP_SDF-Surface-Mobile.shader) | ShaderLab | 104 | 8 | 28 | 140 |
+| [TextMesh Pro/Shaders/TMP\_SDF-Surface.shader](/TextMesh%20Pro/Shaders/TMP_SDF-Surface.shader) | ShaderLab | 123 | 4 | 33 | 160 |
+| [TextMesh Pro/Shaders/TMP\_SDF.shader](/TextMesh%20Pro/Shaders/TMP_SDF.shader) | ShaderLab | 253 | 4 | 70 | 327 |
+| [TextMesh Pro/Shaders/TMP\_Sprite.shader](/TextMesh%20Pro/Shaders/TMP_Sprite.shader) | ShaderLab | 111 | 0 | 21 | 132 |
+| [TextMesh Pro/Shaders/TMPro.cginc](/TextMesh%20Pro/Shaders/TMPro.cginc) | HLSL | 63 | 2 | 20 | 85 |
+| [TextMesh Pro/Shaders/TMPro\_Mobile.cginc](/TextMesh%20Pro/Shaders/TMPro_Mobile.cginc) | HLSL | 129 | 2 | 35 | 166 |
+| [TextMesh Pro/Shaders/TMPro\_Properties.cginc](/TextMesh%20Pro/Shaders/TMPro_Properties.cginc) | HLSL | 62 | 6 | 13 | 81 |
+| [TextMesh Pro/Shaders/TMPro\_Surface.cginc](/TextMesh%20Pro/Shaders/TMPro_Surface.cginc) | HLSL | 75 | 7 | 18 | 100 |
+| [TextMesh Pro/Sprites/EmojiOne.json](/TextMesh%20Pro/Sprites/EmojiOne.json) | JSON | 155 | 0 | 2 | 157 |
+
+[Summary](results.md) / Details / [Diff Summary](diff.md) / [Diff Details](diff-details.md)

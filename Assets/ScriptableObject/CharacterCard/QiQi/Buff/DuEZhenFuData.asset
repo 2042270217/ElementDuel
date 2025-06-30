@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94beb17853988614ba2cbe1cc9810692, type: 3}
+  m_Name: DuEZhenFuData
+  m_EditorClassIdentifier: 
+  sprite: {fileID: 2766906310075125943, guid: dd7a84896fe887141a481f50ccc136fb, type: 3}
+  countMax: 3
+  useCounter: 1
+  description: "\u51FA\u6218\u72B6\u6001\n\u6211\u65B9\u89D2\u8272\u4F7F\u7528\u6280\u80FD\u540E\uFF1A\u5982\u679C\u8BE5\u89D2\u8272\u751F\u547D\u503C\u672A\u6EE1\uFF0C\u5219\u6CBB\u7597\u8BE5\u89D2\u82722\u70B9\u3002\r\n\u53EF\u7528\u6B21\u6570\uFF1A3"

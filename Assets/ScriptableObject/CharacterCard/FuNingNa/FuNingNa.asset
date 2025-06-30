@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87594b7c75df7004392236c788fa44da, type: 3}
+  m_Name: FuNingNa
+  m_EditorClassIdentifier: 
+  charData: {fileID: 11400000, guid: 45011f62085d3a94ba7f6e8854179ea2, type: 2}
+  skills:
+  - {fileID: 11400000, guid: 6ca1d0a62e75ed64fa57631a999ed745, type: 2}
+  - {fileID: 11400000, guid: 721e02f659ac1af45887dffd44e09422, type: 2}
+  - {fileID: 11400000, guid: 46ad210aaf1af3643bbb5405e2a2f523, type: 2}
+  m_isInitialized: 1

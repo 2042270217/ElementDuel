@@ -1,31 +1,27 @@
 ﻿using ElementDuel;
+using System;
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
+using UnityEngine.UI;
 
 public class BattleUI : IUserInterface
 {
-	GameObject m_diceGroup;
-	GameObject m_diceGroupCounter;
-	GameObject m_dice;
-	GameObject m_dicePrefab;
+	Button m_changeButton;
 
-	TMP_Text m_diceCount;
-
-	public BattleUI(ElementDuelGame edGame, GameObject dicePrefab) : base(edGame)
+	public BattleUI(ElementDuelGame edGame) : base(edGame)
 	{
 		Initialize();
-		m_dicePrefab = dicePrefab;
 	}
 
 	public override void Initialize()
 	{
 		m_Root = UITools.FindUIGameObject("BattleUI");
-		m_diceGroup = UnityTools.FindChildGameObject(m_Root, "DiceGroup");
-		m_diceGroupCounter = UnityTools.FindChildGameObject(m_diceGroup, "Counter");
-		m_dice = UnityTools.FindChildGameObject(m_diceGroup, "Dice");
 
-		m_diceCount = UITools.GetUIComponet<TMP_Text>(m_diceGroupCounter, "count");
+		m_changeButton = UITools.GetUIComponet<Button>(m_Root, "ChangeBtn");
 
+		Hide();
 	}
 
 	public override void Release()
@@ -35,20 +31,16 @@ public class BattleUI : IUserInterface
 
 	public override void Update()
 	{
-		UpdateDiceList();
+
 	}
 
-	public void UpdateDiceList()
+	public void AddChangeBtnListener(UnityAction call)
 	{
-		m_diceCount.text = m_EDGame.CurrentPlayer.DiceCount.ToString();
-		var diceList = m_EDGame.CurrentPlayer.DiceList;
-		foreach (ElementType dice in diceList)
-		{
+		m_changeButton.onClick.AddListener(call);
+	}
 
-			var item = GameObject.Instantiate(m_dicePrefab, m_dice.transform);
-			var diceView = item.GetComponent<DiceView>();
-			diceView.CanBeClicked = false;
-			diceView.SetElement(dice);
-		}
+	public void RemoveChangeBtnListener(UnityAction call)
+	{
+		m_changeButton.onClick.RemoveListener(call);
 	}
 }

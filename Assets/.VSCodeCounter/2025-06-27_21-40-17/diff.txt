@@ -1,0 +1,50 @@
+Date : 2025-06-27 21:40:17
+Directory : e:\GAME\ElementDuel\Assets\Scripts
+Total : 20 files,  -3015 codes, -111 comments, -758 blanks, all -3884 lines
+
+Languages
++-----------+------------+------------+------------+------------+------------+
+| language  | files      | code       | comment    | blank      | total      |
++-----------+------------+------------+------------+------------+------------+
+| JSON      |          1 |       -155 |          0 |         -2 |       -157 |
+| HLSL      |          5 |       -459 |        -35 |       -117 |       -611 |
+| ShaderLab |         14 |     -2,401 |        -76 |       -639 |     -3,116 |
++-----------+------------+------------+------------+------------+------------+
+
+Directories
++--------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                           | files      | code       | comment    | blank      | total      |
++--------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                              |         20 |     -3,015 |       -111 |       -758 |     -3,884 |
+| ..                                                                             |         20 |     -3,015 |       -111 |       -758 |     -3,884 |
+| ..\TextMesh Pro                                                                |         20 |     -3,015 |       -111 |       -758 |     -3,884 |
+| ..\TextMesh Pro\Shaders                                                        |         19 |     -2,860 |       -111 |       -756 |     -3,727 |
+| ..\TextMesh Pro\Sprites                                                        |          1 |       -155 |          0 |         -2 |       -157 |
++--------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++--------------------------------------------------------------------------------+-----------+------------+------------+------------+------------+
+| filename                                                                       | language  | code       | comment    | blank      | total      |
++--------------------------------------------------------------------------------+-----------+------------+------------+------------+------------+
+| e:\GAME\ElementDuel\Assets\TextMesh Pro\Shaders\SDFFunctions.hlsl              | HLSL      |       -130 |        -18 |        -31 |       -179 |
+| e:\GAME\ElementDuel\Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader | ShaderLab |       -113 |         -2 |        -31 |       -146 |
+| e:\GAME\ElementDuel\Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader       | ShaderLab |       -123 |         -3 |        -30 |       -156 |
+| e:\GAME\ElementDuel\Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader              | ShaderLab |       -113 |         -2 |        -31 |       -146 |
+| e:\GAME\ElementDuel\Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader         | ShaderLab |       -253 |         -4 |        -70 |       -327 |
+| e:\GAME\ElementDuel\Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader             | ShaderLab |       -253 |         -4 |        -65 |       -322 |
+| e:\GAME\ElementDuel\Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader  | ShaderLab |       -198 |        -10 |        -51 |       -259 |
+| e:\GAME\ElementDuel\Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader  | ShaderLab |       -193 |         -8 |        -52 |       -253 |
+| e:\GAME\ElementDuel\Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader      | ShaderLab |        -82 |         -4 |        -21 |       -107 |
+| e:\GAME\ElementDuel\Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile-2-Pass.shader   | ShaderLab |       -290 |        -15 |        -85 |       -390 |
+| e:\GAME\ElementDuel\Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader          | ShaderLab |       -192 |         -8 |        -51 |       -251 |
+| e:\GAME\ElementDuel\Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader  | ShaderLab |       -104 |         -8 |        -28 |       -140 |
+| e:\GAME\ElementDuel\Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader         | ShaderLab |       -123 |         -4 |        -33 |       -160 |
+| e:\GAME\ElementDuel\Assets\TextMesh Pro\Shaders\TMP_SDF.shader                 | ShaderLab |       -253 |         -4 |        -70 |       -327 |
+| e:\GAME\ElementDuel\Assets\TextMesh Pro\Shaders\TMP_Sprite.shader              | ShaderLab |       -111 |          0 |        -21 |       -132 |
+| e:\GAME\ElementDuel\Assets\TextMesh Pro\Shaders\TMPro.cginc                    | HLSL      |        -63 |         -2 |        -20 |        -85 |
+| e:\GAME\ElementDuel\Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc             | HLSL      |       -129 |         -2 |        -35 |       -166 |
+| e:\GAME\ElementDuel\Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc         | HLSL      |        -62 |         -6 |        -13 |        -81 |
+| e:\GAME\ElementDuel\Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc            | HLSL      |        -75 |         -7 |        -18 |       -100 |
+| e:\GAME\ElementDuel\Assets\TextMesh Pro\Sprites\EmojiOne.json                  | JSON      |       -155 |          0 |         -2 |       -157 |
+| Total                                                                          |           |     -3,015 |       -111 |       -758 |     -3,884 |
++--------------------------------------------------------------------------------+-----------+------------+------------+------------+------------+

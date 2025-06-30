@@ -14,3 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DicePrefab: {fileID: 5034977698822824033, guid: 4fb8ffa7539efcf448208715ddaa494c, type: 3}
   ElementColor: {fileID: 11400000, guid: 48425a7f011ae85469846e109db325d5, type: 2}
+  Config: {fileID: 11400000, guid: 040fed1d674484f40ab9bf6c7c21bedc, type: 2}
+  HandsViewPrefab: {fileID: 1058271188977693334, guid: 8c11e477faaa199449d3ea1808b30f37, type: 3}

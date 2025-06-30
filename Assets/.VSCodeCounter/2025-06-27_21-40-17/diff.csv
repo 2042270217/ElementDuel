@@ -1,0 +1,22 @@
+"filename", "language", "HLSL", "JSON", "ShaderLab", "comment", "blank", "total"
+"e:\GAME\ElementDuel\Assets\TextMesh Pro\Shaders\SDFFunctions.hlsl", "HLSL", -130, 0, 0, -18, -31, -179
+"e:\GAME\ElementDuel\Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader", "ShaderLab", 0, 0, -113, -2, -31, -146
+"e:\GAME\ElementDuel\Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader", "ShaderLab", 0, 0, -123, -3, -30, -156
+"e:\GAME\ElementDuel\Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader", "ShaderLab", 0, 0, -113, -2, -31, -146
+"e:\GAME\ElementDuel\Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader", "ShaderLab", 0, 0, -253, -4, -70, -327
+"e:\GAME\ElementDuel\Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader", "ShaderLab", 0, 0, -253, -4, -65, -322
+"e:\GAME\ElementDuel\Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader", "ShaderLab", 0, 0, -198, -10, -51, -259
+"e:\GAME\ElementDuel\Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader", "ShaderLab", 0, 0, -193, -8, -52, -253
+"e:\GAME\ElementDuel\Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader", "ShaderLab", 0, 0, -82, -4, -21, -107
+"e:\GAME\ElementDuel\Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile-2-Pass.shader", "ShaderLab", 0, 0, -290, -15, -85, -390
+"e:\GAME\ElementDuel\Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader", "ShaderLab", 0, 0, -192, -8, -51, -251
+"e:\GAME\ElementDuel\Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader", "ShaderLab", 0, 0, -104, -8, -28, -140
+"e:\GAME\ElementDuel\Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader", "ShaderLab", 0, 0, -123, -4, -33, -160
+"e:\GAME\ElementDuel\Assets\TextMesh Pro\Shaders\TMP_SDF.shader", "ShaderLab", 0, 0, -253, -4, -70, -327
+"e:\GAME\ElementDuel\Assets\TextMesh Pro\Shaders\TMP_Sprite.shader", "ShaderLab", 0, 0, -111, 0, -21, -132
+"e:\GAME\ElementDuel\Assets\TextMesh Pro\Shaders\TMPro.cginc", "HLSL", -63, 0, 0, -2, -20, -85
+"e:\GAME\ElementDuel\Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc", "HLSL", -129, 0, 0, -2, -35, -166
+"e:\GAME\ElementDuel\Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc", "HLSL", -62, 0, 0, -6, -13, -81
+"e:\GAME\ElementDuel\Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc", "HLSL", -75, 0, 0, -7, -18, -100
+"e:\GAME\ElementDuel\Assets\TextMesh Pro\Sprites\EmojiOne.json", "JSON", 0, -155, 0, 0, -2, -157
+"Total", "-", -459, -155, -2401, -111, -758, -3884

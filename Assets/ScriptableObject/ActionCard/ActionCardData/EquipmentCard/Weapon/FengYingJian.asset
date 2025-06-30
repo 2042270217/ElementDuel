@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 723c649dba0700b4aad858417b4af07f, type: 3}
+  m_Name: FengYingJian
+  m_EditorClassIdentifier: 
+  id: 0
+  sprite: {fileID: -5584864909271254297, guid: 5a667e9ebb97f3546be4b53be7927b9e, type: 3}
+  cdts:
+  - type: 1
+    count: 3
+    element: 0
+  type: 0
+  tag: 0
+  description: "\u89D2\u8272\u9020\u6210\u7684\u4F24\u5BB3+1\u3002 \n\u5BF9\u65B9\u4F7F\u7528\u6280\u80FD\u540E\uFF1A\u5982\u679C\u6240\u9644\u5C5E\u89D2\u8272\u4E3A\u300C\u51FA\u6218\u89D2\u8272\u300D\uFF0C\u5219\u6CBB\u7597\u8BE5\u89D2\u82721\u70B9\u3002\uFF08\u6BCF\u56DE\u5408\u81F3\u591A2\u6B21\uFF09
+    \uFF08\u300C\u5355\u624B\u5251\u300D\u89D2\u8272\u624D\u80FD\u88C5\u5907\u3002\u89D2\u8272\u6700\u591A\u88C5\u59071\u4EF6\u300C\u6B66\u5668\u300D\uFF09"

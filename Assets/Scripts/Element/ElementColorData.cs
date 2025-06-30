@@ -36,5 +36,6 @@ public class ElementColorData : ScriptableObject
 	[Space(30)]
 	public Sprite AnyCostIcon;
 	public Sprite SameCostIcon;
+	public Sprite EnergyCostIcon;
 
 }

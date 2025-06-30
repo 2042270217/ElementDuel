@@ -1,0 +1,190 @@
+Date : 2025-06-27 21:40:17
+Directory : e:\GAME\ElementDuel\Assets\Scripts
+Total : 116 files,  4738 codes, 191 comments, 1208 blanks, all 6137 lines
+
+Languages
++----------+------------+------------+------------+------------+------------+
+| language | files      | code       | comment    | blank      | total      |
++----------+------------+------------+------------+------------+------------+
+| C#       |        116 |      4,738 |        191 |      1,208 |      6,137 |
++----------+------------+------------+------------+------------+------------+
+
+Directories
++--------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                         | files      | code       | comment    | blank      | total      |
++--------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                            |        116 |      4,738 |        191 |      1,208 |      6,137 |
+| . (Files)                                                                                                    |          5 |        330 |         11 |         90 |        431 |
+| Card                                                                                                         |         18 |        177 |         10 |         50 |        237 |
+| Card (Files)                                                                                                 |          1 |          6 |          0 |          2 |          8 |
+| CardSystem                                                                                                   |         13 |        692 |         27 |        243 |        962 |
+| CardSystem\ActionCard                                                                                        |          1 |         88 |          6 |         45 |        139 |
+| CardSystem\CharacterCard                                                                                     |         12 |        604 |         21 |        198 |        823 |
+| CardSystem\CharacterCard (Files)                                                                             |          5 |        468 |         11 |        171 |        650 |
+| CardSystem\CharacterCard\Specific                                                                            |          7 |        136 |         10 |         27 |        173 |
+| CardSystem\CharacterCard\Specific (Files)                                                                    |          1 |          9 |          0 |          1 |         10 |
+| CardSystem\CharacterCard\Specific\Furina                                                                     |          6 |        127 |         10 |         26 |        163 |
+| Card\AssistCard                                                                                              |          7 |         60 |         10 |         25 |         95 |
+| Card\AssistCard\Assist                                                                                       |          3 |         27 |          8 |         13 |         48 |
+| Card\AssistCard\Assist (Files)                                                                               |          2 |         14 |          6 |          6 |         26 |
+| Card\AssistCard\Assist\Site                                                                                  |          1 |         13 |          2 |          7 |         22 |
+| Card\AssistCard\Partner                                                                                      |          3 |         25 |          0 |          6 |         31 |
+| Card\AssistCard\Site                                                                                         |          1 |          8 |          2 |          6 |         16 |
+| Card\CardData                                                                                                |          1 |         30 |          0 |          5 |         35 |
+| Card\EquipmentCard                                                                                           |          5 |         45 |          0 |         10 |         55 |
+| Card\EquipmentCard\Relic                                                                                     |          4 |         36 |          0 |          8 |         44 |
+| Card\EquipmentCard\Weapon                                                                                    |          1 |          9 |          0 |          2 |         11 |
+| Card\EventCard                                                                                               |          4 |         36 |          0 |          8 |         44 |
+| Card\EventCard\Food                                                                                          |          3 |         27 |          0 |          6 |         33 |
+| Card\EventCard\Other                                                                                         |          1 |          9 |          0 |          2 |         11 |
+| CharacterCard                                                                                                |         18 |        285 |          5 |         80 |        370 |
+| CharacterCard\Card                                                                                           |          5 |        158 |          3 |         52 |        213 |
+| CharacterCard\Card (Files)                                                                                   |          2 |         83 |          0 |         19 |        102 |
+| CharacterCard\Card\Implement                                                                                 |          3 |         75 |          3 |         33 |        111 |
+| CharacterCard\Skill                                                                                          |         13 |        127 |          2 |         28 |        157 |
+| CharacterCard\Skill (Files)                                                                                  |          4 |         46 |          2 |         10 |         58 |
+| CharacterCard\Skill\BaBaLa                                                                                   |          3 |         27 |          0 |          6 |         33 |
+| CharacterCard\Skill\FuNingNa                                                                                 |          3 |         27 |          0 |          6 |         33 |
+| CharacterCard\Skill\QiQi                                                                                     |          3 |         27 |          0 |          6 |         33 |
+| Element                                                                                                      |          2 |         95 |          3 |         14 |        112 |
+| GameSystem                                                                                                   |         23 |      1,246 |         44 |        295 |      1,585 |
+| GameSystem (Files)                                                                                           |          3 |        366 |         37 |         91 |        494 |
+| GameSystem\ActionSystem                                                                                      |          2 |         87 |          0 |         20 |        107 |
+| GameSystem\ActionSystem (Files)                                                                              |          1 |         27 |          0 |          9 |         36 |
+| GameSystem\ActionSystem\PlayerAction                                                                         |          1 |         60 |          0 |         11 |         71 |
+| GameSystem\GamePhaseControllerSystem                                                                         |          8 |        491 |          0 |         88 |        579 |
+| GameSystem\GamePhaseControllerSystem (Files)                                                                 |          1 |         59 |          0 |         12 |         71 |
+| GameSystem\GamePhaseControllerSystem\GamePhaseState                                                          |          7 |        432 |          0 |         76 |        508 |
+| GameSystem\InputSystem                                                                                       |          3 |         90 |          1 |         24 |        115 |
+| GameSystem\PlayerStstem                                                                                      |          7 |        212 |          6 |         72 |        290 |
+| GameSystem\PlayerStstem (Files)                                                                              |          1 |        107 |          6 |         23 |        136 |
+| GameSystem\PlayerStstem\PlayerField                                                                          |          6 |        105 |          0 |         49 |        154 |
+| Log                                                                                                          |          2 |         50 |          6 |         10 |         66 |
+| Mono                                                                                                         |         20 |      1,209 |         66 |        274 |      1,549 |
+| Test                                                                                                         |          2 |         45 |          4 |          8 |         57 |
+| Tools                                                                                                        |          2 |         92 |          0 |         12 |        104 |
+| UISystem                                                                                                     |         11 |        517 |         15 |        132 |        664 |
++--------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++--------------------------------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| filename                                                                                                     | language | code       | comment    | blank      | total      |
++--------------------------------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| e:\GAME\ElementDuel\Assets\Scripts\CardSystem\ActionCard\Action.cs                                           | C#       |         88 |          6 |         45 |        139 |
+| e:\GAME\ElementDuel\Assets\Scripts\CardSystem\CharacterCard\BufferEffect.cs                                  | C#       |         34 |          8 |         13 |         55 |
+| e:\GAME\ElementDuel\Assets\Scripts\CardSystem\CharacterCard\Character.cs                                     | C#       |        117 |          0 |         45 |        162 |
+| e:\GAME\ElementDuel\Assets\Scripts\CardSystem\CharacterCard\CharacterAbility.cs                              | C#       |        138 |          2 |         48 |        188 |
+| e:\GAME\ElementDuel\Assets\Scripts\CardSystem\CharacterCard\CharacterBuff.cs                                 | C#       |         87 |          1 |         28 |        116 |
+| e:\GAME\ElementDuel\Assets\Scripts\CardSystem\CharacterCard\Specific\Furina\Burst.cs                         | C#       |         19 |          4 |          5 |         28 |
+| e:\GAME\ElementDuel\Assets\Scripts\CardSystem\CharacterCard\Specific\Furina\BurstBuff.cs                     | C#       |         27 |          0 |          5 |         32 |
+| e:\GAME\ElementDuel\Assets\Scripts\CardSystem\CharacterCard\Specific\Furina\BurstEffect.cs                   | C#       |         15 |          0 |          2 |         17 |
+| e:\GAME\ElementDuel\Assets\Scripts\CardSystem\CharacterCard\Specific\Furina\NormalAttack.cs                  | C#       |         19 |          2 |          3 |         24 |
+| e:\GAME\ElementDuel\Assets\Scripts\CardSystem\CharacterCard\Specific\Furina\Skill.cs                         | C#       |         11 |          0 |          1 |         12 |
+| e:\GAME\ElementDuel\Assets\Scripts\CardSystem\CharacterCard\Specific\Furina\Summon.cs                        | C#       |         36 |          4 |         10 |         50 |
+| e:\GAME\ElementDuel\Assets\Scripts\CardSystem\CharacterCard\Specific\NormalAttack.cs                         | C#       |          9 |          0 |          1 |         10 |
+| e:\GAME\ElementDuel\Assets\Scripts\CardSystem\CharacterCard\Summon.cs                                        | C#       |         92 |          0 |         37 |        129 |
+| e:\GAME\ElementDuel\Assets\Scripts\Card\ActionCard.cs                                                        | C#       |          6 |          0 |          2 |          8 |
+| e:\GAME\ElementDuel\Assets\Scripts\Card\AssistCard\Assist\Assist.cs                                          | C#       |          7 |          6 |          4 |         17 |
+| e:\GAME\ElementDuel\Assets\Scripts\Card\AssistCard\Assist\AssistData.cs                                      | C#       |          7 |          0 |          2 |          9 |
+| e:\GAME\ElementDuel\Assets\Scripts\Card\AssistCard\Assist\Site\HuanNaLanNaAssist.cs                          | C#       |         13 |          2 |          7 |         22 |
+| e:\GAME\ElementDuel\Assets\Scripts\Card\AssistCard\Partner\DiMaWuSi.cs                                       | C#       |          8 |          0 |          2 |         10 |
+| e:\GAME\ElementDuel\Assets\Scripts\Card\AssistCard\Partner\DiNaZeDai.cs                                      | C#       |          9 |          0 |          2 |         11 |
+| e:\GAME\ElementDuel\Assets\Scripts\Card\AssistCard\Partner\MaoShiFu.cs                                       | C#       |          8 |          0 |          2 |         10 |
+| e:\GAME\ElementDuel\Assets\Scripts\Card\AssistCard\Site\HuanNaLanNa.cs                                       | C#       |          8 |          2 |          6 |         16 |
+| e:\GAME\ElementDuel\Assets\Scripts\Card\CardData\ActionCardData.cs                                           | C#       |         30 |          0 |          5 |         35 |
+| e:\GAME\ElementDuel\Assets\Scripts\Card\EquipmentCard\Relic\LaoBingRongYan.cs                                | C#       |          9 |          0 |          2 |         11 |
+| e:\GAME\ElementDuel\Assets\Scripts\Card\EquipmentCard\Relic\QianYanLaoGu.cs                                  | C#       |          9 |          0 |          2 |         11 |
+| e:\GAME\ElementDuel\Assets\Scripts\Card\EquipmentCard\Relic\ShaoNv.cs                                        | C#       |          9 |          0 |          2 |         11 |
+| e:\GAME\ElementDuel\Assets\Scripts\Card\EquipmentCard\Relic\XunYingLieRen.cs                                 | C#       |          9 |          0 |          2 |         11 |
+| e:\GAME\ElementDuel\Assets\Scripts\Card\EquipmentCard\Weapon\FengYingJian.cs                                 | C#       |          9 |          0 |          2 |         11 |
+| e:\GAME\ElementDuel\Assets\Scripts\Card\EventCard\Food\JianDan.cs                                            | C#       |          9 |          0 |          2 |         11 |
+| e:\GAME\ElementDuel\Assets\Scripts\Card\EventCard\Food\QiGuiZhiGuang.cs                                      | C#       |          9 |          0 |          2 |         11 |
+| e:\GAME\ElementDuel\Assets\Scripts\Card\EventCard\Food\WenQuanShiGuang.cs                                    | C#       |          9 |          0 |          2 |         11 |
+| e:\GAME\ElementDuel\Assets\Scripts\Card\EventCard\Other\HaiZhongXunBao.cs                                    | C#       |          9 |          0 |          2 |         11 |
+| e:\GAME\ElementDuel\Assets\Scripts\CharacterCard\Card\BaseCharacterCard.cs                                   | C#       |         62 |          0 |         15 |         77 |
+| e:\GAME\ElementDuel\Assets\Scripts\CharacterCard\Card\CharacterCardData.cs                                   | C#       |         21 |          0 |          4 |         25 |
+| e:\GAME\ElementDuel\Assets\Scripts\CharacterCard\Card\Implement\BaBaLa.cs                                    | C#       |         25 |          1 |         11 |         37 |
+| e:\GAME\ElementDuel\Assets\Scripts\CharacterCard\Card\Implement\FuNingNa.cs                                  | C#       |         25 |          1 |         11 |         37 |
+| e:\GAME\ElementDuel\Assets\Scripts\CharacterCard\Card\Implement\QiQi.cs                                      | C#       |         25 |          1 |         11 |         37 |
+| e:\GAME\ElementDuel\Assets\Scripts\CharacterCard\Skill\BaBaLa\BaBaLaBurst.cs                                 | C#       |          9 |          0 |          2 |         11 |
+| e:\GAME\ElementDuel\Assets\Scripts\CharacterCard\Skill\BaBaLa\BaBaLaNormalAttack.cs                          | C#       |          9 |          0 |          2 |         11 |
+| e:\GAME\ElementDuel\Assets\Scripts\CharacterCard\Skill\BaBaLa\BaBaLaSkill.cs                                 | C#       |          9 |          0 |          2 |         11 |
+| e:\GAME\ElementDuel\Assets\Scripts\CharacterCard\Skill\BaseSkill.cs                                          | C#       |          5 |          0 |          2 |          7 |
+| e:\GAME\ElementDuel\Assets\Scripts\CharacterCard\Skill\FuNingNa\FuNingNaBurst.cs                             | C#       |          9 |          0 |          2 |         11 |
+| e:\GAME\ElementDuel\Assets\Scripts\CharacterCard\Skill\FuNingNa\FuNingNaNormalAttack.cs                      | C#       |          9 |          0 |          2 |         11 |
+| e:\GAME\ElementDuel\Assets\Scripts\CharacterCard\Skill\FuNingNa\FuNingNaSkill.cs                             | C#       |          9 |          0 |          2 |         11 |
+| e:\GAME\ElementDuel\Assets\Scripts\CharacterCard\Skill\QiQi\QiQiBurst.cs                                     | C#       |          9 |          0 |          2 |         11 |
+| e:\GAME\ElementDuel\Assets\Scripts\CharacterCard\Skill\QiQi\QiQiNormalAttack.cs                              | C#       |          9 |          0 |          2 |         11 |
+| e:\GAME\ElementDuel\Assets\Scripts\CharacterCard\Skill\QiQi\QiQiSkill.cs                                     | C#       |          9 |          0 |          2 |         11 |
+| e:\GAME\ElementDuel\Assets\Scripts\CharacterCard\Skill\Skill.cs                                              | C#       |          6 |          0 |          3 |          9 |
+| e:\GAME\ElementDuel\Assets\Scripts\CharacterCard\Skill\SkillCostData.cs                                      | C#       |         25 |          2 |          3 |         30 |
+| e:\GAME\ElementDuel\Assets\Scripts\CharacterCard\Skill\SkillData.cs                                          | C#       |         10 |          0 |          2 |         12 |
+| e:\GAME\ElementDuel\Assets\Scripts\DeckConfig.cs                                                             | C#       |         10 |          0 |          3 |         13 |
+| e:\GAME\ElementDuel\Assets\Scripts\EffectAssetData.cs                                                        | C#       |          6 |          0 |          2 |          8 |
+| e:\GAME\ElementDuel\Assets\Scripts\ElementDuelGame.cs                                                        | C#       |        281 |          9 |         80 |        370 |
+| e:\GAME\ElementDuel\Assets\Scripts\Element\ElementColorData.cs                                               | C#       |         40 |          0 |          2 |         42 |
+| e:\GAME\ElementDuel\Assets\Scripts\Element\ElementDesign.cs                                                  | C#       |         55 |          3 |         12 |         70 |
+| e:\GAME\ElementDuel\Assets\Scripts\GameAssetData.cs                                                          | C#       |          9 |          0 |          2 |         11 |
+| e:\GAME\ElementDuel\Assets\Scripts\GameLoop.cs                                                               | C#       |         24 |          2 |          3 |         29 |
+| e:\GAME\ElementDuel\Assets\Scripts\GameSystem\ActionSystem\ActionSystem.cs                                   | C#       |         27 |          0 |          9 |         36 |
+| e:\GAME\ElementDuel\Assets\Scripts\GameSystem\ActionSystem\PlayerAction\PlayerAction.cs                      | C#       |         60 |          0 |         11 |         71 |
+| e:\GAME\ElementDuel\Assets\Scripts\GameSystem\DeckSystem.cs                                                  | C#       |         66 |         22 |         20 |        108 |
+| e:\GAME\ElementDuel\Assets\Scripts\GameSystem\DiceSystem.cs                                                  | C#       |        281 |         15 |         66 |        362 |
+| e:\GAME\ElementDuel\Assets\Scripts\GameSystem\GamePhaseControllerSystem\GamePhaseControllerSystem.cs         | C#       |         59 |          0 |         12 |         71 |
+| e:\GAME\ElementDuel\Assets\Scripts\GameSystem\GamePhaseControllerSystem\GamePhaseState\ActionPhaseState.cs   | C#       |         77 |          0 |         13 |         90 |
+| e:\GAME\ElementDuel\Assets\Scripts\GameSystem\GamePhaseControllerSystem\GamePhaseState\EndPhaseState.cs      | C#       |         44 |          0 |          7 |         51 |
+| e:\GAME\ElementDuel\Assets\Scripts\GameSystem\GamePhaseControllerSystem\GamePhaseState\GameEndState.cs       | C#       |         28 |          0 |          5 |         33 |
+| e:\GAME\ElementDuel\Assets\Scripts\GameSystem\GamePhaseControllerSystem\GamePhaseState\GamePhaseEnum.cs      | C#       |         16 |          0 |          2 |         18 |
+| e:\GAME\ElementDuel\Assets\Scripts\GameSystem\GamePhaseControllerSystem\GamePhaseState\GamePhaseState.cs     | C#       |         37 |          0 |          5 |         42 |
+| e:\GAME\ElementDuel\Assets\Scripts\GameSystem\GamePhaseControllerSystem\GamePhaseState\GameStartState.cs     | C#       |        190 |          0 |         33 |        223 |
+| e:\GAME\ElementDuel\Assets\Scripts\GameSystem\GamePhaseControllerSystem\GamePhaseState\ThrowingPhaseState.cs | C#       |         40 |          0 |         11 |         51 |
+| e:\GAME\ElementDuel\Assets\Scripts\GameSystem\IGameSystem.cs                                                 | C#       |         19 |          0 |          5 |         24 |
+| e:\GAME\ElementDuel\Assets\Scripts\GameSystem\InputSystem\IClickReceiver.cs                                  | C#       |          7 |          0 |          0 |          7 |
+| e:\GAME\ElementDuel\Assets\Scripts\GameSystem\InputSystem\IHoverReceiver.cs                                  | C#       |          8 |          0 |          0 |          8 |
+| e:\GAME\ElementDuel\Assets\Scripts\GameSystem\InputSystem\InputSystem.cs                                     | C#       |         75 |          1 |         24 |        100 |
+| e:\GAME\ElementDuel\Assets\Scripts\GameSystem\PlayerStstem\PlayerField\AssitField.cs                         | C#       |         15 |          0 |          8 |         23 |
+| e:\GAME\ElementDuel\Assets\Scripts\GameSystem\PlayerStstem\PlayerField\CharacterField.cs                     | C#       |         26 |          0 |         13 |         39 |
+| e:\GAME\ElementDuel\Assets\Scripts\GameSystem\PlayerStstem\PlayerField\DiceField.cs                          | C#       |         19 |          0 |          8 |         27 |
+| e:\GAME\ElementDuel\Assets\Scripts\GameSystem\PlayerStstem\PlayerField\HandsField.cs                         | C#       |         19 |          0 |          7 |         26 |
+| e:\GAME\ElementDuel\Assets\Scripts\GameSystem\PlayerStstem\PlayerField\IPlayerField.cs                       | C#       |         11 |          0 |          5 |         16 |
+| e:\GAME\ElementDuel\Assets\Scripts\GameSystem\PlayerStstem\PlayerField\SummonField.cs                        | C#       |         15 |          0 |          8 |         23 |
+| e:\GAME\ElementDuel\Assets\Scripts\GameSystem\PlayerStstem\PlayerSystem.cs                                   | C#       |        107 |          6 |         23 |        136 |
+| e:\GAME\ElementDuel\Assets\Scripts\Log\EDebug.cs                                                             | C#       |         39 |          6 |          8 |         53 |
+| e:\GAME\ElementDuel\Assets\Scripts\Log\LogLevel.cs                                                           | C#       |         11 |          0 |          2 |         13 |
+| e:\GAME\ElementDuel\Assets\Scripts\Mono\AssistCardView.cs                                                    | C#       |         31 |          9 |         14 |         54 |
+| e:\GAME\ElementDuel\Assets\Scripts\Mono\AssistGroupView.cs                                                   | C#       |          3 |          0 |          3 |          6 |
+| e:\GAME\ElementDuel\Assets\Scripts\Mono\BuffView.cs                                                          | C#       |         29 |          6 |          7 |         42 |
+| e:\GAME\ElementDuel\Assets\Scripts\Mono\CharCardView.cs                                                      | C#       |        177 |         21 |         57 |        255 |
+| e:\GAME\ElementDuel\Assets\Scripts\Mono\CharGroupView.cs                                                     | C#       |         85 |          0 |         16 |        101 |
+| e:\GAME\ElementDuel\Assets\Scripts\Mono\CostDiceView.cs                                                      | C#       |         76 |          2 |         12 |         90 |
+| e:\GAME\ElementDuel\Assets\Scripts\Mono\DiceGroupView.cs                                                     | C#       |         33 |          0 |          6 |         39 |
+| e:\GAME\ElementDuel\Assets\Scripts\Mono\DiceView.cs                                                          | C#       |         91 |          4 |         16 |        111 |
+| e:\GAME\ElementDuel\Assets\Scripts\Mono\EffectView.cs                                                        | C#       |         88 |          2 |         12 |        102 |
+| e:\GAME\ElementDuel\Assets\Scripts\Mono\ElementDiceSetup.cs                                                  | C#       |         44 |          2 |          4 |         50 |
+| e:\GAME\ElementDuel\Assets\Scripts\Mono\ElementIconSetup.cs                                                  | C#       |         78 |          2 |          7 |         87 |
+| e:\GAME\ElementDuel\Assets\Scripts\Mono\ElementView.cs                                                       | C#       |         55 |          2 |          8 |         65 |
+| e:\GAME\ElementDuel\Assets\Scripts\Mono\EnergyView.cs                                                        | C#       |         40 |          2 |         11 |         53 |
+| e:\GAME\ElementDuel\Assets\Scripts\Mono\GameSetup.cs                                                         | C#       |         17 |          0 |          2 |         19 |
+| e:\GAME\ElementDuel\Assets\Scripts\Mono\HandsGroupView.cs                                                    | C#       |         90 |          2 |         23 |        115 |
+| e:\GAME\ElementDuel\Assets\Scripts\Mono\HandsView.cs                                                         | C#       |        112 |          5 |         28 |        145 |
+| e:\GAME\ElementDuel\Assets\Scripts\Mono\PlayerGroupView.cs                                                   | C#       |         35 |          0 |         13 |         48 |
+| e:\GAME\ElementDuel\Assets\Scripts\Mono\SkillGroupView.cs                                                    | C#       |         35 |          0 |          8 |         43 |
+| e:\GAME\ElementDuel\Assets\Scripts\Mono\SkillView.cs                                                         | C#       |         55 |          2 |         15 |         72 |
+| e:\GAME\ElementDuel\Assets\Scripts\Mono\SummonCardView.cs                                                    | C#       |         35 |          5 |         12 |         52 |
+| e:\GAME\ElementDuel\Assets\Scripts\Test\GenGO.cs                                                             | C#       |         20 |          2 |          3 |         25 |
+| e:\GAME\ElementDuel\Assets\Scripts\Test\TestMono.cs                                                          | C#       |         25 |          2 |          5 |         32 |
+| e:\GAME\ElementDuel\Assets\Scripts\Tools\UITools.cs                                                          | C#       |         36 |          0 |          5 |         41 |
+| e:\GAME\ElementDuel\Assets\Scripts\Tools\UnityTools.cs                                                       | C#       |         56 |          0 |          7 |         63 |
+| e:\GAME\ElementDuel\Assets\Scripts\UISystem\AssistUI.cs                                                      | C#       |         28 |          0 |          9 |         37 |
+| e:\GAME\ElementDuel\Assets\Scripts\UISystem\BattleUI.cs                                                      | C#       |         35 |          0 |         12 |         47 |
+| e:\GAME\ElementDuel\Assets\Scripts\UISystem\CharacterUI.cs                                                   | C#       |         52 |          0 |         15 |         67 |
+| e:\GAME\ElementDuel\Assets\Scripts\UISystem\CurrentHandsUI.cs                                                | C#       |         28 |          3 |          9 |         40 |
+| e:\GAME\ElementDuel\Assets\Scripts\UISystem\DiceUI.cs                                                        | C#       |         35 |          3 |          9 |         47 |
+| e:\GAME\ElementDuel\Assets\Scripts\UISystem\IUserInterface.cs                                                | C#       |         31 |          0 |         11 |         42 |
+| e:\GAME\ElementDuel\Assets\Scripts\UISystem\InfoUI.cs                                                        | C#       |         46 |          0 |         13 |         59 |
+| e:\GAME\ElementDuel\Assets\Scripts\UISystem\SkillUI.cs                                                       | C#       |         25 |          3 |          8 |         36 |
+| e:\GAME\ElementDuel\Assets\Scripts\UISystem\StartUI.cs                                                       | C#       |         87 |          0 |         19 |        106 |
+| e:\GAME\ElementDuel\Assets\Scripts\UISystem\ThrowUI.cs                                                       | C#       |        114 |          6 |         21 |        141 |
+| e:\GAME\ElementDuel\Assets\Scripts\UISystem\UIPool.cs                                                        | C#       |         36 |          0 |          6 |         42 |
+| Total                                                                                                        |          |      4,738 |        191 |      1,208 |      6,137 |
++--------------------------------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+

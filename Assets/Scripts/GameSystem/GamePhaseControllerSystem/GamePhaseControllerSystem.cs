@@ -11,6 +11,9 @@ namespace ElementDuel
 	{
 		GamePhaseState m_phaseState;
 
+		public event Action OnEndPhase;
+		public event Action OnActionPhaseBeginning;
+
 		public ElementDuelGame EDGame
 		{
 			get
@@ -65,6 +68,16 @@ namespace ElementDuel
 		public override void Release()
 		{
 
+		}
+
+		public void ExecuteOnEndPhase()
+		{
+			OnEndPhase?.Invoke();
+		}
+
+		public void ExecuteOnActionPhaseBeginning()
+		{
+			OnActionPhaseBeginning?.Invoke();
 		}
 	}
 }
